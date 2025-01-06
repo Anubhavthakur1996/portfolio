@@ -1,0 +1,37 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+  min-height: 100vh;
+  background-color: rgb(246, 216, 255);
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5%;
+    height: 50vh;
+    width: 60vw;
+    background-color: whitesmoke;
+    border-radius: 0.25rem;
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      line-height: 2%;
+
+      .contact-icon {
+        flex: 1;
+        font-size: 1.5rem;
+      }
+
+      .contact-info {
+        flex: 2;
+        text-align: justify;
+      }
+    }
+  }
+}
