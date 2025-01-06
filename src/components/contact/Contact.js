@@ -66,7 +66,7 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              +911234567890
+              ***********
             </a>
           </span>
         </div>

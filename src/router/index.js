@@ -14,7 +14,7 @@ export default function Router() {
       <Route path="history" element={<Projects />} />
       <Route path="skills" element={<Skills />} />
       <Route path="endorsements" element={<Endorsements />} />
-      <Route path="Contact" element={<Contact />} />
+      <Route path="contact" element={<Contact />} />
       <Route path="*" element={<h1>Not Found</h1>} />
     </Routes>
   );
