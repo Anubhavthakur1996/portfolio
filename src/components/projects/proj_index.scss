@@ -10,9 +10,9 @@
     overflow: auto;
     font-family: "Acme", sans-serif;
     padding: 5%;
-
-    .vertical-timeline::before {
-      background-color: lightgray;
-    }
+    margin: 2%;
+    max-height: 58vh;
+    border-radius: 1rem;
+    background-color: whitesmoke;
   }
 }

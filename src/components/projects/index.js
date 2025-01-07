@@ -1,3 +1,4 @@
+import { Card } from "antd";
 import work from "../../data/work";
 import ProjectsUI from "./ProjectsUI";
 import "./proj_index.scss";

@@ -29,6 +29,90 @@ body {
     font-family: "Alex Brush", cursive;
     font-size: xx-large;
   }
+
+  // Animations
+  @keyframes bounce-up-down {
+    0% {
+      transform: scale(1, 1) translateY(0);
+    }
+    10% {
+      transform: scale(1.1, 0.9) translateY(0);
+    }
+    30% {
+      transform: scale(0.9, 1.1) translateY(-6.25rem);
+    }
+    50% {
+      transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+      transform: scale(1, 1) translateY(-0.438rem);
+    }
+    64% {
+      transform: scale(1, 1) translateY(0);
+    }
+    100% {
+      transform: scale(1, 1) translateY(0);
+    }
+  }
+
+  @keyframes bounce-left-right {
+    0% {
+      transform: scale(1, 1) translateX(0);
+    }
+    10% {
+      transform: scale(0.9, 1.1) translateX(0);
+    }
+    30% {
+      transform: scale(1.1, 0.9) translateX(-6.25rem);
+    }
+    50% {
+      transform: scale(0.95, 1.05) translateX(0);
+    }
+    57% {
+      transform: scale(1, 1) translateX(-0.438rem);
+    }
+    64% {
+      transform: scale(1, 1) translateX(0);
+    }
+    100% {
+      transform: scale(1, 1) translateX(0);
+    }
+  }
+
+  .bounce-up-down {
+    animation-name: bounce-up-down;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+
+  .bounce-left-right {
+    animation-name: bounce-left-right;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+
+  .down-button {
+    position: fixed;
+    bottom: 2vh;
+    left: 44vw;
+  }
+
+  .right-button {
+    position: fixed;
+    right: 2vw;
+    top: 44vh;
+  }
+
+  .left-button {
+    position: fixed;
+    left: 2vw;
+    top: 44vh;
+  }
+
+  .down-button,
+  .right-button,
+  .left-button {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
 }
 
 code {
