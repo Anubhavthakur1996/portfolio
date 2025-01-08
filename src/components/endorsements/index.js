@@ -13,7 +13,7 @@ const Endorsements = () => {
   useEffect(() => {
     delay.current = setTimeout(() => {
       setGoNext(true);
-    }, 10000);
+    }, 5000);
 
     return () => clearTimeout(delay);
   }, []);

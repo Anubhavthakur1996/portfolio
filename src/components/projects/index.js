@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router";
 import work from "../../data/work";
 import ProjectsUI from "./ProjectsUI";
@@ -13,22 +13,31 @@ const Projects = () => {
   const [toAnimate, setToAnimate] = useState(true);
   const [goNext, setGoNext] = useState(false);
   const nav = useNavigate();
+  let delay = useRef();
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, true);
+    delay.current = setTimeout(() => {
+      setGoNext(true);
+    }, 10000);
+
+    return () => clearTimeout(delay);
   }, []);
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll, true);
+  // }, []);
 
   const cursonOnButton = () => {
     setToAnimate(false);
   };
 
-  const handleScroll = (e) => {
-    const bottom =
-      e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
-    if (bottom) {
-      setGoNext(true);
-    }
-  };
+  // const handleScroll = (e) => {
+  //   const bottom =
+  //     e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+  //   if (bottom) {
+  //     setGoNext(true);
+  //   }
+  // };
 
   const goNextPage = () => nav("/skills");
 
