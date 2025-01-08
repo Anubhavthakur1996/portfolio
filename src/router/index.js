@@ -9,7 +9,7 @@ import Contact from "../components/contact";
 export default function Router() {
   return (
     <Routes>
-      <Route path="/portfolio" element={<App />} />
+      <Route path="portfolio" element={<App />} />
       <Route path="intro" element={<Introduction />} />
       <Route path="history" element={<Projects />} />
       <Route path="skills" element={<Skills />} />
