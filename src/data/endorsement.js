@@ -17,7 +17,7 @@ const endoresemnt = [
   {
     id: 3,
     name: "Sonu Sharma",
-    title: "React JS Enhineer",
+    title: "React JS Engineer",
     comment:
       "Its was awesome working under you . You were the most knowledgeable and positive person onboard, In case of any query or any problem we always looked forward to you for support and you have been always supportive to me especially.The knowledge i gained while training under you have given me Immense Benefit in the long run . you are indeed a great teacher and a good Friend.",
   },

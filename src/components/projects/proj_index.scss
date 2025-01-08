@@ -7,16 +7,16 @@
   overflow: hidden;
 
   .timeline-box-container {
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 85vh;
 
     .timeline-box {
       overflow: auto;
       padding: 5%;
       margin: 2%;
-      max-height: 55vh;
+      max-height: 65vh;
       border-radius: 1rem;
       background-color: whitesmoke;
       font-size: small;

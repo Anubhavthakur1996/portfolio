@@ -1,7 +1,8 @@
-import { Carousel, Button } from "antd";
-import { FcCollaboration } from "react-icons/fc";
+import { Carousel, Button, Card } from "antd";
+import { FcCollaboration, FcBusinessman } from "react-icons/fc";
 import { ArrowDownOutlined } from "@ant-design/icons";
-import Logo from "../../assets/logo.svg";
+
+const { Meta } = Card;
 
 const EndorsementsUI = ({
   endoresemnt,
@@ -16,34 +17,42 @@ const EndorsementsUI = ({
         <FcCollaboration /> &nbsp; What the people are saying? &nbsp;{" "}
         <FcCollaboration />
       </span>
-      <Carousel className="slider" autoplay arrows>
-        {endoresemnt?.map((endorse) => {
-          return (
-            <>
-              {/* Card body */}
-              <div className="card">
-                {/* Card Header */}
-                <div className="card-header">
-                  {/* Card Icon */}
-                  <div className="card-icon">
-                    <img src={Logo} alt="User" />
-                  </div>
-                  {/* Card Title Column*/}
-                  <div className="card-title-column">
-                    {/* Card Title */}
-                    <div className="card-title">{endorse?.name}</div>
+      <div className="slider-wrapper">
+        <Carousel className="slider" autoplay arrows>
+          {endoresemnt?.map((endorse) => {
+            return (
+              <>
+                {/* Card body */}
+                <Card bordered={false} className="card">
+                  {/* Card Header */}
+                  <div className="card-header">
+                    {/* Card Icon */}
+                    <div className="card-icon">
+                      <FcBusinessman />
+                    </div>
+                    {/* Card Title Column*/}
+                    <div className="card-title-column">
+                      {/* Card Title */}
+                      {/* <div className="card-title">{endorse?.name}</div> */}
 
-                    {/* Card Subtitle */}
-                    <div className="card-subtitle">{endorse?.title}</div>
+                      {/* Card Subtitle */}
+                      {/* <div className="card-subtitle">{endorse?.title}</div> */}
+
+                      <Meta
+                        title={endorse?.name}
+                        description={endorse?.title}
+                      />
+                    </div>
                   </div>
-                </div>
-                {/* Card Content */}
-                <div className="card-content">{endorse?.comment}</div>
-              </div>
-            </>
-          );
-        })}
-      </Carousel>
+                  {/* Card Content */}
+                  <div className="card-content">{endorse?.comment}</div>
+                </Card>
+              </>
+            );
+          })}
+        </Carousel>
+      </div>
+
       {goNext && (
         <Button
           type="primary"
