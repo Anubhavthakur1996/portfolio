@@ -79,6 +79,30 @@ body {
     }
   }
 
+  @keyframes bounce-right-left {
+    0% {
+      transform: scale(1, 1) translateX(0);
+    }
+    10% {
+      transform: scale(0.9, 1.1) translateX(0);
+    }
+    30% {
+      transform: scale(1.1, 0.9) translateX(6.25rem);
+    }
+    50% {
+      transform: scale(0.95, 1.05) translateX(0);
+    }
+    57% {
+      transform: scale(1, 1) translateX(0.438rem);
+    }
+    64% {
+      transform: scale(1, 1) translateX(0);
+    }
+    100% {
+      transform: scale(1, 1) translateX(0);
+    }
+  }
+
   .bounce-up-down {
     animation-name: bounce-up-down;
     animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
@@ -86,6 +110,11 @@ body {
 
   .bounce-left-right {
     animation-name: bounce-left-right;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+
+  .bounce-right-left {
+    animation-name: bounce-right-left;
     animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
   }
 

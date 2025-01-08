@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
-import "./introduction_index.scss";
 import IntroductionUI from "./IntroductionUI";
+import "./introduction_index.scss";
 
 const Introduction = () => {
   const nav = useNavigate();

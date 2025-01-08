@@ -4,7 +4,7 @@ var work = [
   {
     id: 1,
     children: (
-      <Card title="TAMM" bordered={false} hoverable>
+      <Card className="card" title="TAMM" bordered={false} hoverable>
         <Meta
           title="2023 - 2024"
           description={
@@ -38,7 +38,12 @@ var work = [
   {
     id: 2,
     children: (
-      <Card title="VST Project Management" bordered={false} hoverable>
+      <Card
+        className="card"
+        title="VST Project Management"
+        bordered={false}
+        hoverable
+      >
         <Meta
           title="2022 - 2022"
           description={
@@ -67,7 +72,7 @@ var work = [
   {
     id: 3,
     children: (
-      <Card title="c2m llama" bordered={false} hoverable>
+      <Card className="card" title="c2m llama" bordered={false} hoverable>
         <Meta
           title="2020 - 2021"
           description={
@@ -97,7 +102,7 @@ var work = [
   {
     id: 4,
     children: (
-      <Card title="House Master" bordered={false} hoverable>
+      <Card className="card" title="House Master" bordered={false} hoverable>
         <Meta title="2020-2020" />
         <p>
           It's a management tool to manage house inspections. Which can be used
@@ -118,7 +123,7 @@ var work = [
   {
     id: 5,
     children: (
-      <Card title="Saturn" bordered={false} hoverable>
+      <Card className="card" title="Saturn" bordered={false} hoverable>
         <Meta
           title="2019 - 2019"
           description={
@@ -148,7 +153,7 @@ var work = [
   {
     id: 6,
     children: (
-      <Card title="Beeswax" bordered={false} hoverable>
+      <Card className="card" title="Beeswax" bordered={false} hoverable>
         <Meta
           title="2019 - 2019"
           description={
@@ -180,7 +185,12 @@ var work = [
   {
     id: 7,
     children: (
-      <Card title="Misago Project Forums" bordered={false} hoverable>
+      <Card
+        className="card"
+        title="Misago Project Forums"
+        bordered={false}
+        hoverable
+      >
         <Meta
           title="2018 - 2018"
           description={
@@ -212,7 +222,7 @@ var work = [
   {
     id: 8,
     children: (
-      <Card title="Spingig" bordered={false} hoverable>
+      <Card className="card" title="Spingig" bordered={false} hoverable>
         <Meta
           title="2018 - 2018"
           description={
@@ -233,6 +243,25 @@ var work = [
         <Meta
           title="Tech Stack"
           description="Python Flask | Redis Server | Celery | MySql"
+        />
+      </Card>
+    ),
+  },
+  {
+    id: 8,
+    children: (
+      <Card className="card" title="Want More ?" bordered={false} hoverable>
+        <Meta
+          title="From Ifinity - Beyond"
+          description={
+            <a
+              href="https://www.linkedin.com/in/anubhavthakur1996/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click Here For More
+            </a>
+          }
         />
       </Card>
     ),

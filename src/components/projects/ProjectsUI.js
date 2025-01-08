@@ -1,9 +1,14 @@
 import { FcRules } from "react-icons/fc";
-import { Timeline } from "antd";
+import { Button, Timeline } from "antd";
+import { ArrowDownOutlined } from "@ant-design/icons";
 
-const ProjectsUI = ({ work, contentStyle, contentArrowStyle, iconStyle }) => {
-  debugger;
-
+const ProjectsUI = ({
+  work,
+  toAnimate,
+  goNextPage,
+  cursonOnButton,
+  goNext,
+}) => {
   return (
     <div className="projects">
       <span className="title shadow-one">
@@ -14,6 +19,16 @@ const ProjectsUI = ({ work, contentStyle, contentArrowStyle, iconStyle }) => {
       <div className="timeline-box">
         <Timeline mode="alternate" items={work} />
       </div>
+      {goNext && (
+        <Button
+          type="primary"
+          size="large"
+          className={`down-button ${toAnimate ? "bounce-up-down" : ""}`}
+          onMouseEnter={cursonOnButton}
+          icon={<ArrowDownOutlined />}
+          onClick={goNextPage}
+        />
+      )}
     </div>
   );
 };

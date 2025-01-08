@@ -1,16 +1,22 @@
+import { Carousel, Button } from "antd";
 import { FcCollaboration } from "react-icons/fc";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { ArrowDownOutlined } from "@ant-design/icons";
 import Logo from "../../assets/logo.svg";
 
-const EndorsementsUI = ({ endoresemnt }) => {
+const EndorsementsUI = ({
+  endoresemnt,
+  toAnimate,
+  goNext,
+  goNextPage,
+  cursonOnButton,
+}) => {
   return (
     <div className="endorsement">
       <span className="title">
         <FcCollaboration /> &nbsp; What the people are saying? &nbsp;{" "}
         <FcCollaboration />
       </span>
-      <Carousel showArrows={true}>
+      <Carousel className="slider" autoplay arrows>
         {endoresemnt?.map((endorse) => {
           return (
             <>
@@ -38,6 +44,15 @@ const EndorsementsUI = ({ endoresemnt }) => {
           );
         })}
       </Carousel>
+      {goNext && (
+        <Button
+          type="primary"
+          className={`down-button ${toAnimate ? "bounce-up-down" : ""}`}
+          icon={<ArrowDownOutlined />}
+          onMouseEnter={cursonOnButton}
+          onClick={goNextPage}
+        />
+      )}
     </div>
   );
 };

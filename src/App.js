@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Button, Layout } from "antd";
 import { PlayCircleOutlined, ArrowDownOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router";
 import Source from "./assets/intro_vid.mp4";
 import "./App.scss";
-import { useNavigate } from "react-router";
 
 function App() {
   const { Content } = Layout;

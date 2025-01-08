@@ -1,6 +1,14 @@
+import { ArrowLeftOutlined } from "@ant-design/icons";
+import { Button } from "antd";
 import { FcSupport } from "react-icons/fc";
 
-const SkillsUI = ({ skills }) => {
+const SkillsUI = ({
+  skills,
+  cursonOnButton,
+  goNext,
+  goNextPage,
+  toAnimate,
+}) => {
   return (
     <div className="skills">
       <span className="title shadow-one">
@@ -29,6 +37,15 @@ const SkillsUI = ({ skills }) => {
           }
         })}
       </div>
+      {goNext && (
+        <Button
+          type="primary"
+          className={`left-button ${toAnimate ? "bounce-right-left" : ""}`}
+          icon={<ArrowLeftOutlined />}
+          onMouseEnter={cursonOnButton}
+          onClick={goNextPage}
+        />
+      )}
     </div>
   );
 };

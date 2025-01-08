@@ -8,11 +8,15 @@
 
   .timeline-box {
     overflow: auto;
-    font-family: "Acme", sans-serif;
     padding: 5%;
     margin: 2%;
     max-height: 58vh;
     border-radius: 1rem;
     background-color: whitesmoke;
+    font-size: small;
+
+    .card {
+      font-size: smaller;
+    }
   }
 }
