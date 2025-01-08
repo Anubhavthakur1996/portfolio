@@ -20,7 +20,7 @@ const SkillsUI = ({
           if (ind !== 0 && (ind + 1) % 2 === 0) {
             return (
               <>
-                <div key={ind} className="skill-row shadow-one">
+                <div key={ind} className="skill-card shadow-one">
                   <div className="skill-name">{ele?.title}</div>{" "}
                   <div className="skill-icon">{ele?.icon}</div>
                 </div>
@@ -29,7 +29,7 @@ const SkillsUI = ({
             );
           } else {
             return (
-              <div key={ind} className="skill-row shadow-one">
+              <div key={ind} className="skill-card shadow-one">
                 <div className="skill-name">{ele?.title}</div>{" "}
                 <div className="skill-icon">{ele?.icon}</div>
               </div>

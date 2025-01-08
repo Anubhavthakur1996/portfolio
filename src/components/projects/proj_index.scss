@@ -6,17 +6,24 @@
   min-height: 100vh;
   overflow: hidden;
 
-  .timeline-box {
-    overflow: auto;
-    padding: 5%;
-    margin: 2%;
-    max-height: 55vh;
-    border-radius: 1rem;
-    background-color: whitesmoke;
-    font-size: small;
+  .timeline-box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 85vh;
 
-    .card {
-      font-size: smaller;
+    .timeline-box {
+      overflow: auto;
+      padding: 5%;
+      margin: 2%;
+      max-height: 55vh;
+      border-radius: 1rem;
+      background-color: whitesmoke;
+      font-size: small;
+
+      .card {
+        font-size: smaller;
+      }
     }
   }
 }

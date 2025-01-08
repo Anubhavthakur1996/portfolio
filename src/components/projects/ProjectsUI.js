@@ -16,8 +16,14 @@ const ProjectsUI = ({
         &nbsp;&nbsp; A Little history lesson &nbsp;&nbsp;
         <FcRules />
       </span>
-      <div className="timeline-box">
-        <Timeline mode="alternate" items={work} />
+      <div className="timeline-box-container">
+        <div className="timeline-box">
+          <Timeline
+            className="timeline-wrapper"
+            mode="alternate"
+            items={work}
+          />
+        </div>
       </div>
       {goNext && (
         <Button

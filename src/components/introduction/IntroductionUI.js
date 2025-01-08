@@ -18,21 +18,21 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
       <div className="introduction">
         <img src={Profile} alt="profile" className="profile-image" />
         <div className="introduction-text">
-          <p className="row">
+          <div className="row">
             Hi there, I am &nbsp;
             <span className="name">
               Anubhav <FcApproval />
             </span>
             .
-          </p>
-          <p className="row">
+          </div>
+          <div className="row">
             I am a &nbsp;
             <span className="profession">
               <FcSupport /> software engineer <FcSupport />
             </span>
             .
-          </p>
-          <p className="row">
+          </div>
+          <div className="row">
             I am a &nbsp;
             <span className="great">
               great <FcUp />
@@ -42,23 +42,23 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
               software engineer <FcSettings />
             </span>
             .
-          </p>
-          <p className="row">
+          </div>
+          <div className="row">
             I know how to build &nbsp;
             <span className="great">
               great <FcUp />
               &nbsp;
             </span>{" "}
             <span className="software">software</span>.
-          </p>
-          <p className="row">
+          </div>
+          <div className="row">
             I know my &nbsp;
             <span className="stack">
               stack <FcTodoList />
             </span>
             .
-          </p>
-          <p className="row">
+          </div>
+          <div className="row">
             It's a fully &nbsp;
             <span className="stacked">
               stacked <FcMultipleInputs /> &nbsp;
@@ -67,8 +67,8 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
               stack <FcTodoList />
             </span>
             .
-          </p>
-          <p className="row">
+          </div>
+          <div className="row">
             Yeah baby, I am a &nbsp;
             <span className="stacked">
               stacked <FcMultipleInputs />, &nbsp;
@@ -79,13 +79,13 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
               <FcTodoList />
             </span>
             .
-          </p>
-          <p className="row">
+          </div>
+          <div className="row">
             <span className="software">
               engineer <FcServices />
             </span>
             .
-          </p>
+          </div>
         </div>
         {goNext && (
           <Button

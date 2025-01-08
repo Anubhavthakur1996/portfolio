@@ -8,24 +8,26 @@
   font-size: xx-large;
 
   .skill-list {
-    margin: 2% 0;
+    flex: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     font-family: "Aldrich", sans-serif;
     font-size: large;
 
     .row-break {
       width: 100vw;
-      padding: 1%;
+      // padding: 1%;
     }
 
-    .skill-row {
+    .skill-card {
       display: flex;
       background-color: whitesmoke;
       padding: 2%;
       width: 35%;
       border-radius: 0.25rem;
+      margin: 0 2%;
 
       .skill-name,
       .skill-icon {
