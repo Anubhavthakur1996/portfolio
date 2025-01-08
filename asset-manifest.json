@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3b4d9acf.css",
-    "main.js": "/portfolio/static/js/main.0c859fa6.js",
+    "main.css": "/portfolio/static/css/main.8f00f95f.css",
+    "main.js": "/portfolio/static/js/main.95da4702.js",
     "static/js/453.ac7a7bc9.chunk.js": "/portfolio/static/js/453.ac7a7bc9.chunk.js",
     "static/media/intro_vid.mp4": "/portfolio/static/media/intro_vid.715c88446adde40cca9b.mp4",
     "static/media/p_l.png": "/portfolio/static/media/p_l.b84f5d1e9acafb7211ec.png",
@@ -43,15 +43,14 @@
     "static/media/alex-brush-vietnamese-400-normal.woff": "/portfolio/static/media/alex-brush-vietnamese-400-normal.7021bb188352e6ec56a3.woff",
     "static/media/alata-vietnamese-400-normal.woff": "/portfolio/static/media/alata-vietnamese-400-normal.ed231da85f2f2689a3d0.woff",
     "static/media/agbalumo-cyrillic-ext-400-normal.woff2": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.cc91a32634e5805e241f.woff2",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/agbalumo-cyrillic-ext-400-normal.woff": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.d75e406c9831ecebda1d.woff",
     "index.html": "/portfolio/index.html",
-    "main.3b4d9acf.css.map": "/portfolio/static/css/main.3b4d9acf.css.map",
-    "main.0c859fa6.js.map": "/portfolio/static/js/main.0c859fa6.js.map",
+    "main.8f00f95f.css.map": "/portfolio/static/css/main.8f00f95f.css.map",
+    "main.95da4702.js.map": "/portfolio/static/js/main.95da4702.js.map",
     "453.ac7a7bc9.chunk.js.map": "/portfolio/static/js/453.ac7a7bc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3b4d9acf.css",
-    "static/js/main.0c859fa6.js"
+    "static/css/main.8f00f95f.css",
+    "static/js/main.95da4702.js"
   ]
 }
