@@ -17,24 +17,12 @@ const SkillsUI = ({
       </span>
       <div className="skill-list">
         {skills?.map((ele, ind) => {
-          if (ind !== 0 && (ind + 1) % 2 === 0) {
-            return (
-              <>
-                <div key={ind} className="skill-card shadow-one">
-                  <div className="skill-name">{ele?.title}</div>{" "}
-                  <div className="skill-icon">{ele?.icon}</div>
-                </div>
-                <div className="row-break"></div>
-              </>
-            );
-          } else {
-            return (
-              <div key={ind} className="skill-card shadow-one">
-                <div className="skill-name">{ele?.title}</div>{" "}
-                <div className="skill-icon">{ele?.icon}</div>
-              </div>
-            );
-          }
+          return (
+            <div key={ind} className="skill-card shadow-one">
+              <div className="skill-name">{ele?.title}</div>{" "}
+              <div className="skill-icon">{ele?.icon}</div>
+            </div>
+          );
         })}
       </div>
       {goNext && (
