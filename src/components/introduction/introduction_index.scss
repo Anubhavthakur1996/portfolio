@@ -4,12 +4,11 @@
   align-items: center;
   min-height: 100vh;
   background-color: #fff3b0;
-  font-family: 'Acme', sans-serif;
-  font-size: .7rem;
+  font-family: "Acme", sans-serif;
+  font-size: medium;
   font-weight: 600;
   color: #000;
   letter-spacing: 0.05em;
-  
 
   .profile-image {
     width: 15%;
@@ -23,7 +22,6 @@
     justify-content: center;
     align-items: center;
     margin: 2% 0;
-
 
     .row {
       display: flex;
@@ -39,27 +37,27 @@
     .software,
     .stack,
     .stacked {
-      font-size: medium;
+      font-size: large;
     }
 
     .name {
-      font-family: 'Aclonica', sans-serif;
+      font-family: "Aclonica", sans-serif;
     }
     .profession {
-      font-family: 'Aldrich', sans-serif;
+      font-family: "Aldrich", sans-serif;
     }
     .great {
-      font-family: 'Agbalumo', sans-serif;
+      font-family: "Agbalumo", sans-serif;
     }
     .software {
-      font-family: 'Alex Brush', cursive;
-      font-size: large;
+      font-family: "Alex Brush", cursive;
+      font-size: xx-large;
     }
     .stack {
-      font-family: 'Akaya Kanadaka', sans-serif;
+      font-family: "Akaya Kanadaka", sans-serif;
     }
     .stacked {
-      font-family: 'Alata', sans-serif;
+      font-family: "Alata", sans-serif;
     }
   }
 }
