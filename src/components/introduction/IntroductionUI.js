@@ -16,26 +16,30 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
   return (
     <>
       <div className="introduction">
-        <img src={Profile} alt="profile" className="profile-image" />
+        <img
+          src={Profile}
+          alt="profile"
+          className="profile-image scale-in-out"
+        />
         <div className="introduction-text">
-          <div className="row">
+          <div className="row move-left-right">
             Hi there, I am &nbsp;
             <span className="name">
-              Anubhav <FcApproval />
+              Anubhav <FcApproval className="scale-in-out" />
             </span>
             .
           </div>
-          <div className="row">
+          <div className="row move-right-left">
             I am a &nbsp;
             <span className="profession">
               <FcSupport /> software engineer <FcSupport />
             </span>
             .
           </div>
-          <div className="row">
+          <div className="row move-left-right">
             I am a &nbsp;
             <span className="great">
-              great <FcUp />
+              great <FcUp className="scale-in-out" />
               &nbsp;
             </span>{" "}
             <span className="profession">
@@ -43,22 +47,22 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
             </span>
             .
           </div>
-          <div className="row">
+          <div className="row move-right-left">
             I know how to build &nbsp;
             <span className="great">
-              great <FcUp />
+              great <FcUp className="scale-in-out" />
               &nbsp;
             </span>{" "}
             <span className="software">software</span>.
           </div>
-          <div className="row">
+          <div className="row move-left-right">
             I know my &nbsp;
             <span className="stack">
               stack <FcTodoList />
             </span>
             .
           </div>
-          <div className="row">
+          <div className="row move-right-left">
             It's a fully &nbsp;
             <span className="stacked">
               stacked <FcMultipleInputs /> &nbsp;
@@ -68,19 +72,19 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
             </span>
             .
           </div>
-          <div className="row">
+          <div className="row move-left-right">
             Yeah baby, I am a &nbsp;
             <span className="stacked">
               stacked <FcMultipleInputs />, &nbsp;
             </span>{" "}
             <span className="stack">
-              <FcFullBattery />
+              <FcFullBattery className="scale-in-out" />
               full-stack
               <FcTodoList />
             </span>
             .
           </div>
-          <div className="row">
+          <div className="row move-right-left">
             <span className="software">
               engineer <FcServices />
             </span>

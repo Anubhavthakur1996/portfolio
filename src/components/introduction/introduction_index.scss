@@ -15,7 +15,13 @@
     width: 15%;
     border-radius: 10%;
     object-fit: scale-down;
+    transition: all 1s;
   }
+
+  .profile-image:hover {
+    scale: 1.2;
+  }
+
   .introduction-text {
     flex: 2;
     display: flex;
@@ -36,6 +42,7 @@
     .great,
     .stack,
     .stacked {
+      transition: all .8s;
       font-size: larger;
     }
 
@@ -57,6 +64,12 @@
     }
     .stacked {
       font-family: "Alata", sans-serif;
+    }
+
+    .name:hover,
+    .great:hover,
+    .stack:hover {
+      scale: 1.2;
     }
   }
 }
