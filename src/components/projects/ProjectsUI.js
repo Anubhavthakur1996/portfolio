@@ -11,7 +11,7 @@ const ProjectsUI = ({
 }) => {
   return (
     <div className="projects">
-      <span className="title shadow-one">
+      <span className="title">
         <FcRules />
         &nbsp;&nbsp; A Little history lesson &nbsp;&nbsp;
         <FcRules />

@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #b0fff7;
+  // background-color: #b0fff7;
   min-height: 100vh;
   font-family: "Alex Brush", cursive;
   font-size: xx-large;
 
   .skill-list {
-    flex: 1;
+    margin-top: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,16 +18,16 @@
 
     .row-break {
       width: 100vw;
-      // padding: 1%;
     }
 
     .skill-card {
       display: flex;
       background-color: whitesmoke;
       padding: 2%;
-      width: 35%;
+      width: 40%;
       border-radius: 0.25rem;
       margin: 0 2%;
+      text-wrap: nowrap;
 
       .skill-name,
       .skill-icon {
@@ -43,6 +43,7 @@
 
       .skill-icon {
         flex: 1;
+        font-size: xx-large;
       }
     }
   }

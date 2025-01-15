@@ -11,7 +11,7 @@ const SkillsUI = ({
 }) => {
   return (
     <div className="skills">
-      <span className="title shadow-one">
+      <span className="title">
         <FcSupport /> &nbsp;&nbsp; My Tools of Trade &nbsp;&nbsp;
         <FcSupport />
       </span>
