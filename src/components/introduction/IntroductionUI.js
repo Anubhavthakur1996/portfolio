@@ -32,7 +32,8 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
           <div className="row move-right-left">
             I am a &nbsp;
             <span className="profession">
-              <FcSupport /> software engineer <FcSupport />
+              <FcSupport className="rotate-up-down" /> software engineer{" "}
+              <FcSupport className="rotate-up-down" />
             </span>
             .
           </div>
@@ -43,7 +44,7 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
               &nbsp;
             </span>{" "}
             <span className="profession">
-              software engineer <FcSettings />
+              software engineer <FcSettings className="circle-rotation" />
             </span>
             .
           </div>
