@@ -4,7 +4,7 @@ import { FcCellPhone } from "react-icons/fc";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact move-bottom-up">
       <span className="title">You can find me on:</span>
       <div className="contact-list-container">
         <div className="contact-list shadow-one">

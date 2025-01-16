@@ -113,7 +113,7 @@ body {
       transform: scale(0);
     }
     50% {
-      transform: scale(2);
+      transform: scale(1.5);
     }
     100% {
       transform: scale(1);
@@ -123,7 +123,7 @@ body {
   // Move left to right
   @keyframes move-left-right {
     0% {
-      transform: translateX(-40vw);
+      transform: translateX(-100vw);
     }
     100% {
       transform: translateX(0);
@@ -133,7 +133,7 @@ body {
   // Move right to left
   @keyframes move-right-left {
     0% {
-      transform: translateX(40vw);
+      transform: translateX(100vw);
     }
     100% {
       transform: translateX(0);
@@ -160,6 +160,20 @@ body {
     }
   }
 
+  // move bottom up
+  @keyframes move-bottom-up {
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .move-bottom-up {
+    animation: move-bottom-up 2s;
+  }
+
   .circle-rotation {
     animation: circle-rotation 4s linear infinite;
   }
@@ -169,11 +183,11 @@ body {
   }
 
   .move-right-left {
-    animation: move-right-left 5s;
+    animation: move-right-left 2s;
   }
 
   .move-left-right {
-    animation: move-left-right 5s;
+    animation: move-left-right 2s;
   }
 
   .scale-in-out {

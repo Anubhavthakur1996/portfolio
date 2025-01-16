@@ -12,7 +12,7 @@ const EndorsementsUI = ({
   cursonOnButton,
 }) => {
   return (
-    <div className="endorsement">
+    <div className="endorsement move-left-right">
       <span className="title">
         <FcCollaboration /> &nbsp; What the people are saying? &nbsp;{" "}
         <FcCollaboration />

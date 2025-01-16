@@ -10,7 +10,7 @@ const ProjectsUI = ({
   goNext,
 }) => {
   return (
-    <div className="projects">
+    <div className="projects move-right-left">
       <span className="title">
         <FcRules />
         &nbsp;&nbsp; A Little history lesson &nbsp;&nbsp;

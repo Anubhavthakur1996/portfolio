@@ -15,7 +15,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
   return (
     <>
-      <div className="introduction">
+      <div className="introduction move-bottom-up">
         <img
           src={Profile}
           alt="profile"

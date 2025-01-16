@@ -10,7 +10,7 @@ const SkillsUI = ({
   toAnimate,
 }) => {
   return (
-    <div className="skills">
+    <div className="skills move-bottom-up">
       <span className="title">
         <FcSupport /> &nbsp;&nbsp; My Tools of Trade &nbsp;&nbsp;
         <FcSupport />
