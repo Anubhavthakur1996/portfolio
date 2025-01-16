@@ -19,11 +19,11 @@ const EndorsementsUI = ({
       </span>
       <div className="slider-wrapper">
         <Carousel className="slider" autoplay arrows>
-          {endoresemnt?.map((endorse) => {
+          {endoresemnt?.map((endorse, index) => {
             return (
               <>
                 {/* Card body */}
-                <Card bordered={false} className="card">
+                <Card key={index} bordered={false} className="card">
                   {/* Card Header */}
                   <div className="card-header">
                     {/* Card Icon */}

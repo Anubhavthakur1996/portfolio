@@ -2,7 +2,7 @@ import { FaLinkedin, FaGitAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FcCellPhone } from "react-icons/fc";
 
-const Contact = () => {
+const ContactUI = () => {
   return (
     <div className="contact move-bottom-up">
       <span className="title">You can find me on:</span>
@@ -77,4 +77,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUI;

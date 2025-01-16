@@ -5,17 +5,20 @@ import Projects from "../components/projects";
 import Skills from "../components/skills";
 import Endorsements from "../components/endorsements";
 import Contact from "../components/contact";
+import Menu from "../components/shared/menu";
 
 export default function Router() {
   return (
     <Routes>
-      <Route path="portfolio" element={<App />} />
-      <Route path="intro" element={<Introduction />} />
-      <Route path="history" element={<Projects />} />
-      <Route path="skills" element={<Skills />} />
-      <Route path="endorsements" element={<Endorsements />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="*" element={<h1>Not Found</h1>} />
+      <Route element={<Menu />}>
+        <Route path="portfolio" element={<App />} />
+        <Route path="intro" element={<Introduction />} />
+        <Route path="history" element={<Projects />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="endorsements" element={<Endorsements />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<h1>Not Found</h1>} />
+      </Route>
     </Routes>
   );
 }
