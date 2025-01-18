@@ -29,6 +29,8 @@
 
   .ant-list-items {
     display: flex;
+    width: 100vw;
+    justify-content: center;
 
     .item {
       background-color: white;

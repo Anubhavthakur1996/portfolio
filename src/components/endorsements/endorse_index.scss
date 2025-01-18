@@ -21,6 +21,8 @@
   }
 
   .slider-wrapper {
+    margin-top: 5%;
+
     .slider {
       width: 80vw;
     }
@@ -32,7 +34,6 @@
 
   .slider-wrapper,
   .slider-wrapper-mobile {
-    margin-top: 5%;
     flex: 1;
     display: flex;
 
