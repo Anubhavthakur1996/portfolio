@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6856a0df.css",
-    "main.js": "/portfolio/static/js/main.87d3cb81.js",
+    "main.css": "/portfolio/static/css/main.5a271c92.css",
+    "main.js": "/portfolio/static/js/main.d7f374b2.js",
     "static/js/453.ac7a7bc9.chunk.js": "/portfolio/static/js/453.ac7a7bc9.chunk.js",
     "static/media/intro_vid.mp4": "/portfolio/static/media/intro_vid.715c88446adde40cca9b.mp4",
+    "static/media/man-2.jpg": "/portfolio/static/media/man-2.3283c64c0b64d78ef2bb.jpg",
     "static/media/p_l.png": "/portfolio/static/media/p_l.b84f5d1e9acafb7211ec.png",
     "static/media/agbalumo-latin-400-normal.woff": "/portfolio/static/media/agbalumo-latin-400-normal.c274dd1099d59de66c86.woff",
     "static/media/akaya-kanadaka-kannada-400-normal.woff2": "/portfolio/static/media/akaya-kanadaka-kannada-400-normal.8b83081ee9d924dab512.woff2",
@@ -45,12 +46,12 @@
     "static/media/agbalumo-cyrillic-ext-400-normal.woff2": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.cc91a32634e5805e241f.woff2",
     "static/media/agbalumo-cyrillic-ext-400-normal.woff": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.d75e406c9831ecebda1d.woff",
     "index.html": "/portfolio/index.html",
-    "main.6856a0df.css.map": "/portfolio/static/css/main.6856a0df.css.map",
-    "main.87d3cb81.js.map": "/portfolio/static/js/main.87d3cb81.js.map",
+    "main.5a271c92.css.map": "/portfolio/static/css/main.5a271c92.css.map",
+    "main.d7f374b2.js.map": "/portfolio/static/js/main.d7f374b2.js.map",
     "453.ac7a7bc9.chunk.js.map": "/portfolio/static/js/453.ac7a7bc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6856a0df.css",
-    "static/js/main.87d3cb81.js"
+    "static/css/main.5a271c92.css",
+    "static/js/main.d7f374b2.js"
   ]
 }
