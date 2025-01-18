@@ -22,13 +22,22 @@
     }
 
     .skill-card {
+      width: 40%;
+    }
+
+    .skill-card-mobile {
+      width: 90%;
+    }
+
+    .skill-card,
+    .skill-card-mobile {
       display: flex;
       background-color: whitesmoke;
       padding: 2%;
-      width: 40%;
       border-radius: 0.25rem;
       margin: 0 2%;
       text-wrap: nowrap;
+      transition: all 0.5s;
 
       .skill-name,
       .skill-icon {
@@ -46,6 +55,11 @@
         flex: 1;
         font-size: xx-large;
       }
+    }
+
+    .skill-card:hover,
+    .skill-card-mobile:active {
+      scale: 1.2;
     }
   }
 }

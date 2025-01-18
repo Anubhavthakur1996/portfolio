@@ -19,7 +19,12 @@ const SkillsUI = ({
       <div className="skill-list">
         {skills?.map((ele, ind) => {
           return (
-            <div key={ind} className="skill-card shadow-one">
+            <div
+              key={ind}
+              className={
+                (isMobile ? "skill-card-mobile" : "skill-card") + " shadow-one"
+              }
+            >
               <div className="skill-name">{ele?.title}</div>{" "}
               <div className="skill-icon">{ele?.icon}</div>
             </div>
