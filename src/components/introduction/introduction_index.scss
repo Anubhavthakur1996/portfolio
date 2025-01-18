@@ -1,21 +1,37 @@
-.introduction {
+.introduction,
+.introduction-mobile {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
   background-color: #fff3b0;
   font-family: "Acme", sans-serif;
-  font-size: 1.5rem;
   font-weight: 600;
   color: #000;
   letter-spacing: 0.05em;
 
-  .profile-image {
+  .introduction {
+    font-size: 1.5rem;
+  }
+
+  .introduction-mobile {
+    font-size: 1rem;
+  }
+
+  .profile-image,
+  .profile-image-mobile {
     flex: 1;
-    width: 15%;
     border-radius: 10%;
     object-fit: scale-down;
     transition: all 1s;
+  }
+
+  .profile-image {
+    width: 15%;
+  }
+
+  .profile-image-mobile {
+    width: 50%;
   }
 
   .profile-image:hover {
@@ -42,7 +58,7 @@
     .great,
     .stack,
     .stacked {
-      transition: all .8s;
+      transition: all 0.8s;
       font-size: larger;
     }
 
@@ -55,9 +71,16 @@
     .great {
       font-family: "Agbalumo", sans-serif;
     }
-    .software {
+    .software,
+    .software-mobile {
       font-family: "Alex Brush", cursive;
+    }
+    .software {
       font-size: xxx-large;
+    }
+
+    .software-mobile {
+      font-size: xx-large;
     }
     .stack {
       font-family: "Akaya Kanadaka", sans-serif;

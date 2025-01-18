@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { Button, Layout } from "antd";
 import { PlayCircleOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
 import Source from "./assets/intro_vid.mp4";
+import { setMobile } from "./redux/coreSlice";
 import "./App.scss";
 
 function App() {
@@ -12,6 +14,25 @@ function App() {
   const [enableScroll, setEnableScroll] = useState(false);
   const [toAnimate, setToAnimate] = useState(true);
   const nav = useNavigate();
+  const dispatch = useDispatch();
+
+  /* Storing user's device details in a variable*/
+  let details = navigator.userAgent;
+
+  /* Creating a regular expression  
+containing some mobile devices keywords  
+to search it in details string*/
+  let regexp = /android|iphone|kindle|ipad|iPod/i;
+
+  /* Using test() method to search regexp in details 
+it returns boolean value*/
+  let isMobileDevice = regexp.test(details);
+
+  if (isMobileDevice) {
+    dispatch(setMobile(true));
+  } else {
+    dispatch(setMobile(false));
+  }
 
   useEffect(() => {
     if (start) {

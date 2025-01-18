@@ -12,14 +12,28 @@ import { Button } from "antd";
 import Profile from "../../assets/p_l.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
-const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
+const IntroductionUI = ({
+  toAnimate,
+  goNext,
+  cursonOnButton,
+  goNextPage,
+  isMobile,
+}) => {
   return (
     <>
-      <div className="introduction move-bottom-up">
+      <div
+        className={
+          (isMobile ? "introduction-mobile" : "introduction") +
+          " move-bottom-up"
+        }
+      >
         <img
           src={Profile}
           alt="profile"
-          className="profile-image scale-in-out"
+          className={
+            (isMobile ? "profile-image-mobile" : "profile-image") +
+            " scale-in-out"
+          }
         />
         <div className="introduction-text">
           <div className="row move-left-right">
@@ -54,7 +68,10 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
               great <FcUp className="scale-in-out" />
               &nbsp;
             </span>{" "}
-            <span className="software">software</span>.
+            <span className={isMobile ? "software-mobile" : "software"}>
+              software
+            </span>
+            .
           </div>
           <div className="row move-left-right">
             I know my &nbsp;
@@ -86,7 +103,7 @@ const IntroductionUI = ({ toAnimate, goNext, cursonOnButton, goNextPage }) => {
             .
           </div>
           <div className="row move-right-left">
-            <span className="software">
+            <span className={isMobile ? "software-mobile" : "software"}>
               engineer <FcServices />
             </span>
             .
