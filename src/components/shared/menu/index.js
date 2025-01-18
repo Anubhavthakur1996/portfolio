@@ -7,12 +7,13 @@ import "./index_menu.scss";
 const Menu = () => {
   const nav = useNavigate();
   const showMenu = useSelector((state) => state.menu.showMenu);
+  const isMobile = useSelector((state) => state.core.isMobile);
 
   return (
     <>
       {showMenu && (
         <List
-          className="menu"
+          className={isMobile ? "menu-mobile" : "menu"}
           dataSource={menu}
           renderItem={(item) => (
             <List.Item
