@@ -1,3 +1,11 @@
+.introduction {
+  font-size: 1.5rem;
+}
+
+.introduction-mobile {
+  font-size: 1rem;
+}
+
 .introduction,
 .introduction-mobile {
   display: flex;
@@ -9,14 +17,6 @@
   font-weight: 600;
   color: #000;
   letter-spacing: 0.05em;
-
-  .introduction {
-    font-size: 1.5rem;
-  }
-
-  .introduction-mobile {
-    font-size: 1rem;
-  }
 
   .profile-image,
   .profile-image-mobile {
