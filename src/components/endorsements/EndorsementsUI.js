@@ -1,6 +1,7 @@
 import { Carousel, Button, Card } from "antd";
 import { FcCollaboration, FcBusinessman } from "react-icons/fc";
 import { ArrowDownOutlined } from "@ant-design/icons";
+import Man from "../../assets/man-2.jpg";
 
 const { Meta } = Card;
 
@@ -11,6 +12,7 @@ const EndorsementsUI = ({
   goNextPage,
   cursonOnButton,
   isMobile,
+  showMenu,
 }) => {
   return (
     <div className="endorsement move-left-right">
@@ -18,35 +20,39 @@ const EndorsementsUI = ({
         <FcCollaboration /> &nbsp; What the people are saying? &nbsp;{" "}
         <FcCollaboration />
       </span>
-      <div className="slider-wrapper">
-        <Carousel className="slider" autoplay arrows>
+      <div className={isMobile ? "slider-wrapper-mobile" : "slider-wrapper"}>
+        <Carousel className="slider" arrows>
           {endoresemnt?.map((endorse, index) => {
+            if (isMobile) {
+              return (
+                <Card hoverable cover={<img alt="Cover" src={Man} />}>
+                  <Meta title={endorse?.name} description={endorse?.title} />
+                  {/* Card Content */}
+                  <div className="card-content">{endorse?.comment}</div>
+                </Card>
+              );
+            }
             return (
               <>
                 {/* Card body */}
-                <Card key={index} bordered={false} className="card">
+                <Card hoverable key={index} bordered={false} className="card">
+                  {/* Card Icon */}
+                  <div className="card-icon">
+                    <img alt="Cover" src={Man} />
+                  </div>
                   {/* Card Header */}
-                  <div className="card-header">
-                    {/* Card Icon */}
-                    <div className="card-icon">
-                      <FcBusinessman />
-                    </div>
+                  <div className="card-right">
                     {/* Card Title Column*/}
                     <div className="card-title-column">
                       {/* Card Title */}
-                      {/* <div className="card-title">{endorse?.name}</div> */}
-
-                      {/* Card Subtitle */}
-                      {/* <div className="card-subtitle">{endorse?.title}</div> */}
-
                       <Meta
                         title={endorse?.name}
                         description={endorse?.title}
                       />
+                      {/* Card Content */}
+                      <div className="card-content">{endorse?.comment}</div>
                     </div>
                   </div>
-                  {/* Card Content */}
-                  <div className="card-content">{endorse?.comment}</div>
                 </Card>
               </>
             );
@@ -54,7 +60,7 @@ const EndorsementsUI = ({
         </Carousel>
       </div>
 
-      {goNext && (
+      {goNext && !showMenu && (
         <Button
           type="primary"
           className={`down-button ${toAnimate ? "bounce-up-down" : ""}`}

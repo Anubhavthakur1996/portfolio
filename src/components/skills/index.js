@@ -11,6 +11,7 @@ const Skills = () => {
   const [goNext, setGoNext] = useState(false);
   let delay = useRef();
 
+  const showMenu = useSelector((state) => state.menu.showMenu);
   const isMobile = useSelector((state) => state.core.isMobile);
 
   useEffect(() => {
@@ -34,6 +35,7 @@ const Skills = () => {
     goNextPage,
     skills,
     isMobile,
+    showMenu,
   };
   return <SkillsUI {...props} />;
 };

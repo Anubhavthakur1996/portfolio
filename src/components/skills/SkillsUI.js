@@ -9,6 +9,7 @@ const SkillsUI = ({
   goNextPage,
   toAnimate,
   isMobile,
+  showMenu,
 }) => {
   return (
     <div className="skills move-bottom-up">
@@ -31,7 +32,7 @@ const SkillsUI = ({
           );
         })}
       </div>
-      {goNext && (
+      {goNext && !showMenu && (
         <Button
           type="primary"
           className={`left-button ${toAnimate ? "bounce-right-left" : ""}`}

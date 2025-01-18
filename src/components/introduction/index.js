@@ -10,6 +10,7 @@ const Introduction = () => {
   const [goNext, setGoNext] = useState(false);
   let delay = useRef();
   const isMobile = useSelector((state) => state.core.isMobile);
+  const showMenu = useSelector((state) => state.menu.showMenu);
 
   useEffect(() => {
     delay.current = setTimeout(() => {
@@ -31,6 +32,7 @@ const Introduction = () => {
     cursonOnButton,
     goNextPage,
     isMobile,
+    showMenu,
   };
 
   return <IntroductionUI {...props} />;

@@ -9,6 +9,7 @@ const ProjectsUI = ({
   cursonOnButton,
   goNext,
   isMobile,
+  showMenu,
 }) => {
   return (
     <div className="projects move-right-left">
@@ -30,7 +31,7 @@ const ProjectsUI = ({
           />
         </div>
       </div>
-      {goNext && (
+      {goNext && !showMenu && (
         <Button
           type="primary"
           size="large"

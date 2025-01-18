@@ -11,6 +11,7 @@ const Projects = () => {
   const nav = useNavigate();
   let delay = useRef();
   const isMobile = useSelector((state) => state.core.isMobile);
+  const showMenu = useSelector((state) => state.menu.showMenu);
 
   useEffect(() => {
     delay.current = setTimeout(() => {
@@ -45,6 +46,7 @@ const Projects = () => {
     goNextPage,
     goNext,
     isMobile,
+    showMenu,
   };
 
   return <ProjectsUI {...props} />;

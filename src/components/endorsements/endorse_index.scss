@@ -5,13 +5,38 @@
   min-height: 100vh;
   background-color: #fff3b0;
 
+  .slider-wrapper-mobile {
+    .slider {
+      width: 95vw;
+
+      img {
+        height: 50vh;
+      }
+
+      .card-content {
+        min-height: 10vh;
+        margin-top: 5%;
+      }
+    }
+  }
+
   .slider-wrapper {
+    .slider {
+      width: 80vw;
+    }
+
+    .ant-card-body {
+      display: flex;
+    }
+  }
+
+  .slider-wrapper,
+  .slider-wrapper-mobile {
     margin-top: 5%;
     flex: 1;
     display: flex;
 
     .slider {
-      width: 60vw;
       background-color: lightgrey;
       padding: 2% 0;
       border-radius: 1rem;
@@ -24,40 +49,46 @@
         rgba(0, 0, 0, 0.3) 0 0.438rem 0.813rem -0.188rem,
         rgba(0, 0, 0, 0.2) 0 -0.188rem 0 inset;
 
-      font-family: "Acme", sans-serif;
       text-align: left;
+      border-radius: 1rem;
 
-      .card-header {
+      .card-icon {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        img {
+          width: 100%;
+          border-radius: 1rem;
+          margin-left: -10vw;
+          z-index: 1;
+        }
+      }
+
+      .card-right {
+        flex: 3;
         display: flex;
 
-        .card-icon {
-          flex: 1;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 15rem;
-        }
-
         .card-title-column {
-          flex: 4;
           display: flex;
           flex-direction: column;
 
           .ant-card-meta-title {
             text-wrap: wrap;
-            font-size: xxx-large;
+            font-size: xx-large;
           }
 
           .ant-card-meta-description {
-            font-size: xx-large;
+            font-size: x-large;
           }
         }
       }
 
       .card-content {
-        display: flex;
         margin-top: 5%;
-        font-family: "Source Sans 3 Variable", sans-serif;
+        display: flex;
         font-size: x-large;
       }
     }

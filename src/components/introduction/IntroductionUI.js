@@ -18,6 +18,7 @@ const IntroductionUI = ({
   cursonOnButton,
   goNextPage,
   isMobile,
+  showMenu,
 }) => {
   return (
     <>
@@ -109,7 +110,7 @@ const IntroductionUI = ({
             .
           </div>
         </div>
-        {goNext && (
+        {goNext && !showMenu && (
           <Button
             type="primary"
             className={`right-button ${toAnimate ? "bounce-left-right" : ""}`}

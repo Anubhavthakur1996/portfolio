@@ -12,6 +12,7 @@ const Endorsements = () => {
   let delay = useRef();
 
   const isMobile = useSelector((state) => state.core.isMobile);
+  const showMenu = useSelector((state) => state.menu.showMenu);
 
   useEffect(() => {
     delay.current = setTimeout(() => {
@@ -34,6 +35,7 @@ const Endorsements = () => {
     cursonOnButton,
     goNextPage,
     isMobile,
+    showMenu,
   };
   return <EndorsementsUI {...props} />;
 };
