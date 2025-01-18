@@ -7,7 +7,7 @@ const coreSlice = createSlice({
   },
   reducers: {
     setMobile(state, action) {
-      state.isMobile = action.value;
+      state.isMobile = action.payload;
     },
   },
 });

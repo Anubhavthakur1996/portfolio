@@ -61,6 +61,10 @@
       transition: all 0.8s;
       font-size: larger;
     }
+    .software,
+    .software-mobile {
+      font-family: "Alex Brush", cursive;
+    }
 
     .name {
       font-family: "Aclonica", sans-serif;
@@ -71,12 +75,9 @@
     .great {
       font-family: "Agbalumo", sans-serif;
     }
-    .software,
-    .software-mobile {
-      font-family: "Alex Brush", cursive;
-    }
+
     .software {
-      font-size: xxx-large;
+      font-size: xxx-large; 
     }
 
     .software-mobile {
