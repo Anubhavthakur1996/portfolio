@@ -27,19 +27,23 @@
   bottom: 0;
   z-index: 1;
 
-  .item {
-    background-color: white;
-    margin: 2%;
-    width: 15vw;
-    height: 20vh;
-    border-radius: 2rem 2rem 0 0;
-    text-align: center;
-    transition: all 0.2s;
-    writing-mode: sideways-lr;
-  }
+  .ant-list-items {
+    display: flex;
 
-  .item:hover {
-    scale: 1.1;
-    cursor: pointer;
+    .item {
+      background-color: white;
+      margin: 2%;
+      width: 15vw;
+      height: 20vh;
+      border-radius: 2rem 2rem 0 0;
+      text-align: center;
+      transition: all 0.2s;
+      writing-mode: sideways-lr;
+    }
+
+    .item:hover {
+      scale: 1.1;
+      cursor: pointer;
+    }
   }
 }
