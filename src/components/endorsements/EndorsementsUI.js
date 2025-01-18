@@ -10,10 +10,11 @@ const EndorsementsUI = ({
   goNext,
   goNextPage,
   cursonOnButton,
+  isMobile,
 }) => {
   return (
     <div className="endorsement move-left-right">
-      <span className="title">
+      <span className={isMobile ? "title-mobile" : "title"}>
         <FcCollaboration /> &nbsp; What the people are saying? &nbsp;{" "}
         <FcCollaboration />
       </span>

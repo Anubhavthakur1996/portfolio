@@ -1,19 +1,16 @@
 import { useEffect, useState, useRef } from "react";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import work from "../../data/work";
 import ProjectsUI from "./ProjectsUI";
 import "./proj_index.scss";
-
-// const contentStyle = {
-//   background: "rgb(189, 137, 248)",
-//   color: "#fff",
-// };
 
 const Projects = () => {
   const [toAnimate, setToAnimate] = useState(true);
   const [goNext, setGoNext] = useState(false);
   const nav = useNavigate();
   let delay = useRef();
+  const isMobile = useSelector((state) => state.core.isMobile);
 
   useEffect(() => {
     delay.current = setTimeout(() => {
@@ -47,6 +44,7 @@ const Projects = () => {
     cursonOnButton,
     goNextPage,
     goNext,
+    isMobile,
   };
 
   return <ProjectsUI {...props} />;

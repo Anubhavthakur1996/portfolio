@@ -8,19 +8,24 @@ const ProjectsUI = ({
   goNextPage,
   cursonOnButton,
   goNext,
+  isMobile,
 }) => {
   return (
     <div className="projects move-right-left">
-      <span className="title">
+      <span className={isMobile ? "title-mobile" : "title"}>
         <FcRules />
         &nbsp;&nbsp; A Little history lesson &nbsp;&nbsp;
         <FcRules />
       </span>
-      <div className="timeline-box-container">
+      <div
+        className={
+          isMobile ? "timeline-box-container-mobile" : "timeline-box-container"
+        }
+      >
         <div className="timeline-box">
           <Timeline
             className="timeline-wrapper"
-            mode="alternate"
+            mode={isMobile ? "left" : "alternate"}
             items={work}
           />
         </div>

@@ -2,10 +2,10 @@ import { FaLinkedin, FaGitAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FcCellPhone } from "react-icons/fc";
 
-const ContactUI = () => {
+const ContactUI = ({isMobile}) => {
   return (
     <div className="contact move-bottom-up">
-      <span className="title">You can find me on:</span>
+      <span className={isMobile ? "title-mobile" : "title"}>You can find me on:</span>
       <div className="contact-list-container">
         <div className="contact-list shadow-one">
           {/* LinkedIn */}

@@ -8,10 +8,11 @@ const SkillsUI = ({
   goNext,
   goNextPage,
   toAnimate,
+  isMobile,
 }) => {
   return (
     <div className="skills move-bottom-up">
-      <span className="title">
+      <span className={isMobile ? "title-mobile" : "title"}>
         <FcSupport /> &nbsp;&nbsp; My Tools of Trade &nbsp;&nbsp;
         <FcSupport />
       </span>

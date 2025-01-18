@@ -6,17 +6,29 @@
   overflow: hidden;
   background-color: #fff3b0;
 
-  .timeline-box-container {
-    flex: 1;
-    display: flex;
+  .timeline-box-container-mobile {
+    margin-top: 10%;
 
     .timeline-box {
-      overflow: auto;
-      padding: 5%;
+      margin: 0 2%;
+
+      .card-mobile {
+        font-size: medium;
+
+        .ant-card-head {
+          font-size: x-large;
+        }
+
+        .ant-card-meta-title {
+          font-size: large;
+        }
+      }
+    }
+  }
+
+  .timeline-box-container {
+    .timeline-box {
       margin: 0 10%;
-      max-height: 65vh;
-      border-radius: 1rem;
-      background-color: whitesmoke;
 
       .card {
         font-size: large;
@@ -29,6 +41,20 @@
           font-size: x-large;
         }
       }
+    }
+  }
+
+  .timeline-box-container,
+  .timeline-box-container-mobile {
+    flex: 1;
+    display: flex;
+
+    .timeline-box {
+      overflow: auto;
+      padding: 5%;
+      max-height: 65vh;
+      border-radius: 1rem;
+      background-color: whitesmoke;
     }
   }
 }
