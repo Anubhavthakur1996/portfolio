@@ -63,12 +63,12 @@ const ContactUI = ({ isMobile }) => {
           </div>
 
           {/* Number */}
-          <div className="contact-row">
+          {/* <div className="contact-row">
             <span className="contact-icon">
               <FcCellPhone />
             </span>
-            <span className="contact-info">+917018504173 | +919459870390</span>
-          </div>
+            <span className="contact-info">+91******** | +91********</span>
+          </div> */}
         </div>
       </div>
     </div>
