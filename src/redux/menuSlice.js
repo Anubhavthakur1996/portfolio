@@ -3,11 +3,11 @@ import { createSlice } from "@reduxjs/toolkit";
 const menuSlice = createSlice({
   name: "menu",
   initialState: {
-    showMenu: false,
+    menu: false,
   },
   reducers: {
     showMenu(state, action) {
-      state.showMenu = true;
+      state.menu = true;
     },
   },
 });

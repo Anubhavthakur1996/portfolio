@@ -10,8 +10,9 @@ const Projects = () => {
   const [goNext, setGoNext] = useState(false);
   const nav = useNavigate();
   let delay = useRef();
+  
   const isMobile = useSelector((state) => state.core.isMobile);
-  const showMenu = useSelector((state) => state.menu.showMenu);
+  const showMenu = useSelector((state) => state.menu.menu);
 
   useEffect(() => {
     delay.current = setTimeout(() => {

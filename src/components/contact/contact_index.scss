@@ -4,14 +4,12 @@
   align-items: center;
   min-height: 100vh;
   background-color: #fff3b0;
-  // background-color: rgb(246, 216, 255);
-  // background-color: whitesmoke;
 
-  .contact-list-container {
+  .contact-list-container,
+  .contact-list-container-mobile {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10%;
 
     .contact-list {
       display: flex;
@@ -21,7 +19,7 @@
       height: 30vh;
       width: 60vw;
       background-color: white;
-      border-radius: 0.25rem;
+      border-radius: 1rem;
 
       .contact-row {
         display: flex;
@@ -31,13 +29,38 @@
 
         .contact-icon {
           flex: 1;
-          font-size: 3rem;
         }
 
         .contact-info {
           flex: 2;
           text-align: justify;
-          font-size: x-large;
+        }
+      }
+    }
+  }
+
+  .contact-list-container {
+    .contact-icon {
+      font-size: xxx-large;
+    }
+
+    .contact-info {
+      font-size: x-large;
+    }
+  }
+
+  .contact-list-container-mobile {
+    .contact-list {
+      .contact-row {
+        .contact-icon {
+          flex: 1;
+          font-size: xx-large;
+        }
+
+        .contact-info {
+          flex: 2;
+          text-align: justify;
+          font-size: large;
         }
       }
     }

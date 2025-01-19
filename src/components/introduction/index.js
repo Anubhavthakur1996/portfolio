@@ -10,7 +10,7 @@ const Introduction = () => {
   const [goNext, setGoNext] = useState(false);
   let delay = useRef();
   const isMobile = useSelector((state) => state.core.isMobile);
-  const showMenu = useSelector((state) => state.menu.showMenu);
+  const showMenu = useSelector((state) => state.menu.menu);
 
   useEffect(() => {
     delay.current = setTimeout(() => {

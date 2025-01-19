@@ -1,5 +1,5 @@
-import { Carousel, Button, Card } from "antd";
-import { FcCollaboration, FcBusinessman } from "react-icons/fc";
+import { Carousel, Button, Card, Image } from "antd";
+import { FcCollaboration } from "react-icons/fc";
 import { ArrowDownOutlined } from "@ant-design/icons";
 import Man from "../../assets/man-2.jpg";
 
@@ -21,11 +21,15 @@ const EndorsementsUI = ({
         <FcCollaboration />
       </span>
       <div className={isMobile ? "slider-wrapper-mobile" : "slider-wrapper"}>
-        <Carousel className="slider" arrows>
+        <Carousel autoplay className="slider" arrows>
           {endoresemnt?.map((endorse, index) => {
             if (isMobile) {
               return (
-                <Card hoverable cover={<img alt="Cover" src={Man} />}>
+                <Card
+                  key={index}
+                  hoverable
+                  cover={<Image alt="Cover" src={Man} />}
+                >
                   <Meta title={endorse?.name} description={endorse?.title} />
                   {/* Card Content */}
                   <div className="card-content">{endorse?.comment}</div>
@@ -38,7 +42,7 @@ const EndorsementsUI = ({
                 <Card hoverable key={index} bordered={false} className="card">
                   {/* Card Icon */}
                   <div className="card-icon">
-                    <img alt="Cover" src={Man} />
+                    <Image className="img-class" alt="Cover" src={Man} />
                   </div>
                   {/* Card Header */}
                   <div className="card-right">
