@@ -37,11 +37,11 @@ const ContactUI = ({ isMobile }) => {
             </span>
             <span className="contact-info">
               <a
-                href="https://www.linkedin.com/in/anubhavthakur1996/"
+                href="https://anubhavthakur1996.github.io/"
                 target="_blank"
                 rel="noreferrer"
               >
-                GitHub
+                Find me on GitHub
               </a>
             </span>
           </div>
@@ -53,11 +53,11 @@ const ContactUI = ({ isMobile }) => {
             </span>
             <span className="contact-info">
               <a
-                href="https://www.linkedin.com/in/anubhavthakur1996/"
+                href="mailto:anubhavthakur1996@outlook.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                E-Mail
+                E-Mail Me
               </a>
             </span>
           </div>
@@ -67,15 +67,7 @@ const ContactUI = ({ isMobile }) => {
             <span className="contact-icon">
               <FcCellPhone />
             </span>
-            <span className="contact-info">
-              <a
-                href="https://www.linkedin.com/in/anubhavthakur1996/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                ***********
-              </a>
-            </span>
+            <span className="contact-info">+917018504173 | +919459870390</span>
           </div>
         </div>
       </div>

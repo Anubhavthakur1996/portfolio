@@ -16,8 +16,6 @@
       flex-direction: column;
       justify-content: space-evenly;
       padding: 5%;
-      height: 30vh;
-      width: 60vw;
       background-color: white;
       border-radius: 1rem;
 
@@ -40,18 +38,28 @@
   }
 
   .contact-list-container {
-    .contact-icon {
-      font-size: xxx-large;
-    }
+    .contact-list {
+      height: 30vh;
+      width: 60vw;
 
-    .contact-info {
-      font-size: x-large;
+      .contact-icon {
+        font-size: xxx-large;
+      }
+
+      .contact-info {
+        font-size: x-large;
+      }
     }
   }
 
   .contact-list-container-mobile {
     .contact-list {
+      flex-wrap: wrap;
+      height: 50vh;
+
       .contact-row {
+        flex-wrap: wrap;
+
         .contact-icon {
           flex: 1;
           font-size: xx-large;
