@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bc59ac7b.css",
-    "main.js": "/portfolio/static/js/main.ad0811f6.js",
+    "main.css": "/portfolio/static/css/main.8b87ec40.css",
+    "main.js": "/portfolio/static/js/main.14c65fc0.js",
     "static/js/453.ac7a7bc9.chunk.js": "/portfolio/static/js/453.ac7a7bc9.chunk.js",
     "static/media/intro_vid.mp4": "/portfolio/static/media/intro_vid.715c88446adde40cca9b.mp4",
     "static/media/man-2.jpg": "/portfolio/static/media/man-2.3283c64c0b64d78ef2bb.jpg",
-    "static/media/p_l.png": "/portfolio/static/media/p_l.b84f5d1e9acafb7211ec.png",
+    "static/media/logo.png": "/portfolio/static/media/logo.8795e96bbaad66c2b4c9.png",
+    "static/media/splash.png": "/portfolio/static/media/splash.c8f2a0015fbdeac692bd.png",
     "static/media/agbalumo-latin-400-normal.woff": "/portfolio/static/media/agbalumo-latin-400-normal.c274dd1099d59de66c86.woff",
     "static/media/akaya-kanadaka-kannada-400-normal.woff2": "/portfolio/static/media/akaya-kanadaka-kannada-400-normal.8b83081ee9d924dab512.woff2",
     "static/media/agbalumo-latin-400-normal.woff2": "/portfolio/static/media/agbalumo-latin-400-normal.401ca69517ff451d1a01.woff2",
@@ -46,12 +47,12 @@
     "static/media/agbalumo-cyrillic-ext-400-normal.woff2": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.cc91a32634e5805e241f.woff2",
     "static/media/agbalumo-cyrillic-ext-400-normal.woff": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.d75e406c9831ecebda1d.woff",
     "index.html": "/portfolio/index.html",
-    "main.bc59ac7b.css.map": "/portfolio/static/css/main.bc59ac7b.css.map",
-    "main.ad0811f6.js.map": "/portfolio/static/js/main.ad0811f6.js.map",
+    "main.8b87ec40.css.map": "/portfolio/static/css/main.8b87ec40.css.map",
+    "main.14c65fc0.js.map": "/portfolio/static/js/main.14c65fc0.js.map",
     "453.ac7a7bc9.chunk.js.map": "/portfolio/static/js/453.ac7a7bc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc59ac7b.css",
-    "static/js/main.ad0811f6.js"
+    "static/css/main.8b87ec40.css",
+    "static/js/main.14c65fc0.js"
   ]
 }
