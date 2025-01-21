@@ -3,13 +3,29 @@ import { Button, Layout } from "antd";
 import { PlayCircleOutlined, ArrowDownOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router";
 import Source from "./assets/intro_vid.mp4";
+import Splash from "./assets/splash.png";
 import "./App.scss";
+
+const SplashComp = () => {
+  return (
+    <div className="splash">
+      <div className="spin-infinite">
+        <img
+          className="splash-img scale-in-out-infinite"
+          src={Splash}
+          alt="splash"
+        />
+      </div>
+    </div>
+  );
+};
 
 function App() {
   const { Content } = Layout;
   const vidRef = useRef();
   const [start, setStart] = useState(false);
   const [enableScroll, setEnableScroll] = useState(false);
+  const [splash, setSplash] = useState(true);
   const [toAnimate, setToAnimate] = useState(true);
   const nav = useNavigate();
 
@@ -18,6 +34,10 @@ function App() {
       vidRef.current.play();
     }
   }, [start]);
+
+  useEffect(() => {
+    setTimeout(() => setSplash(false), 4000);
+  }, [splash]);
 
   const startAction = () => {
     setStart(true);
@@ -41,6 +61,10 @@ function App() {
 
   const goNextPage = () => nav("/intro");
 
+  if (splash) {
+    return <SplashComp />;
+  }
+
   if (start) {
     return (
       <Layout className="App">
@@ -63,7 +87,7 @@ function App() {
     );
   } else {
     return (
-      <Layout className="container">
+      <Layout className="container scale-in-out">
         <Button
           className="start"
           icon={<PlayCircleOutlined />}

@@ -9,7 +9,7 @@ import {
   FcFullBattery,
 } from "react-icons/fc";
 import { Button } from "antd";
-import Profile from "../../assets/p_l.png";
+import Profile from "../../assets/logo.png";
 import { ArrowRightOutlined } from "@ant-design/icons";
 
 const IntroductionUI = ({

@@ -1,7 +1,22 @@
+.splash {
+  display: flex;
+  height: 100vh;
+  background-color: #fff3b0;
+  justify-content: center;
+  align-items: center;
+  transition: all ease;
+
+  .splash-img {
+    height: 20vh;
+    transition: all ease;
+  }
+}
+
 .App {
   display: flex;
   min-height: 100vh;
   min-width: 100vw;
+  transition: all ease;
 
   .body {
     display: flex;

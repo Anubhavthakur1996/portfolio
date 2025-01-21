@@ -17,13 +17,14 @@
   font-weight: 600;
   color: #000;
   letter-spacing: 0.05em;
+  transition: all ease;
 
   .profile-image,
   .profile-image-mobile {
     flex: 1;
     border-radius: 10%;
     object-fit: scale-down;
-    transition: all 1s;
+    transition: all ease;
   }
 
   .profile-image {
@@ -52,6 +53,7 @@
       align-items: center;
       min-height: 2vh;
       flex-wrap: wrap;
+      transition: all ease;
     }
     .name,
     .profession,
@@ -77,7 +79,7 @@
     }
 
     .software {
-      font-size: xxx-large; 
+      font-size: xxx-large;
     }
 
     .software-mobile {
