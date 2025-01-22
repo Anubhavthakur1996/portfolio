@@ -3,6 +3,7 @@ import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import skills from "../../data/skills";
 import SkillsUI from "./SkillsUI";
+import audioClip from "../../assets/audio/piano.mp3";
 import "./skill_index.scss";
 
 const Skills = () => {
@@ -10,6 +11,7 @@ const Skills = () => {
   const [toAnimate, setToAnimate] = useState(true);
   const [goNext, setGoNext] = useState(false);
   let delay = useRef();
+  const audio = new Audio(audioClip);
 
   const showMenu = useSelector((state) => state.menu.menu);
   const isMobile = useSelector((state) => state.core.isMobile);
@@ -26,6 +28,10 @@ const Skills = () => {
     setToAnimate(false);
   };
 
+  const playAudio = () => {
+    audio.play();
+  };
+
   const goNextPage = () => nav("/endorsements");
 
   const props = {
@@ -36,6 +42,7 @@ const Skills = () => {
     skills,
     isMobile,
     showMenu,
+    playAudio,
   };
   return <SkillsUI {...props} />;
 };

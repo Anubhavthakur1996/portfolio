@@ -66,6 +66,11 @@
       .skill-card-mobile:active {
         scale: 1.2;
       }
+
+      .skill-card::before,
+      .skill-card-mobile::before {
+        
+      }
     }
   }
 }

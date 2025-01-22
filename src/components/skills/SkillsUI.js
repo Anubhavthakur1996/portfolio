@@ -10,6 +10,7 @@ const SkillsUI = ({
   toAnimate,
   isMobile,
   showMenu,
+  playAudio,
 }) => {
   return (
     <div className="skills move-bottom-up">
@@ -32,6 +33,7 @@ const SkillsUI = ({
                   " shadow-one" +
                   (ind % 2 === 0 ? " move-right-left" : " move-left-right")
                 }
+                onClick={playAudio}
               >
                 <div className="skill-name">{ele?.title}</div>{" "}
                 <div
