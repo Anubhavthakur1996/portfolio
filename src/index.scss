@@ -32,6 +32,26 @@ body {
     }
   }
 
+  .profile-image,
+  .profile-image-mobile {
+    flex: 1;
+    border-radius: 10%;
+    object-fit: scale-down;
+    transition: all ease;
+  }
+
+  .profile-image {
+    width: 15%;
+  }
+
+  .profile-image-mobile {
+    width: 50%;
+  }
+
+  .profile-image:hover {
+    scale: 1.2;
+  }
+
   // Animations
 
   // Bounce up down

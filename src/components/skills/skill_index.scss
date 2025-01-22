@@ -8,61 +8,64 @@
   font-family: "Alex Brush", cursive;
   font-size: xx-large;
 
-  .skill-list {
-    margin-top: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    font-family: "Aldrich", sans-serif;
-    font-size: large;
-
-    .row-break {
-      width: 100vw;
-    }
-
-    .skill-card {
-      width: 40%;
-    }
-
-    .skill-card-mobile {
-      width: 90%;
-    }
-
-    .skill-card,
-    .skill-card-mobile {
+  .list-wrapper {
+    flex: 2;
+    .skill-list {
+      // flex: 2;
       display: flex;
-      background-color: whitesmoke;
-      padding: 2%;
-      border-radius: 0.25rem;
-      margin: 0 2%;
-      text-wrap: nowrap;
-      transition: all 0.5s;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-family: "Aldrich", sans-serif;
+      font-size: large;
 
-      .skill-name,
-      .skill-icon {
+      .row-break {
+        width: 100vw;
+      }
+
+      .skill-card {
+        width: 40%;
+      }
+
+      .skill-card-mobile {
+        width: 90%;
+      }
+
+      .skill-card,
+      .skill-card-mobile {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: max-content;
-      }
+        background-color: whitesmoke;
+        padding: 2%;
+        border-radius: 0.25rem;
+        margin: 0 2%;
+        text-wrap: nowrap;
+        transition: all 0.5s;
 
-      .skill-name {
-        flex: 2;
-      }
+        .skill-name,
+        .skill-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: max-content;
+        }
 
-      .skill-icon {
-        flex: 1;
-        font-size: xx-large;
-        img {
-          height: 2rem;
+        .skill-name {
+          flex: 2;
+        }
+
+        .skill-icon {
+          flex: 1;
+          font-size: xx-large;
+          img {
+            height: 2rem;
+          }
         }
       }
-    }
 
-    .skill-card:hover,
-    .skill-card-mobile:active {
-      scale: 1.2;
+      .skill-card:hover,
+      .skill-card-mobile:active {
+        scale: 1.2;
+      }
     }
   }
 }

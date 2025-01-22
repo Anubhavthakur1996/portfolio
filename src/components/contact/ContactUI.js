@@ -2,6 +2,7 @@ import { Typography } from "antd";
 import { FaLinkedin, FaGitAlt } from "react-icons/fa";
 import { FcBinoculars } from "react-icons/fc";
 import { MdEmail } from "react-icons/md";
+import Contact from "../../assets/contact.png";
 // import { FcCellPhone } from "react-icons/fc";
 
 const { Title } = Typography;
@@ -9,12 +10,21 @@ const { Title } = Typography;
 const ContactUI = ({ isMobile }) => {
   return (
     <div className="contact move-bottom-up">
-      <span className={isMobile ? "title-mobile" : "title"}>
+      {/* <span className={isMobile ? "title-mobile" : "title"}>
         <Title>
           <FcBinoculars />
           &nbsp; You Can Find Me On: &nbsp; <FcBinoculars />
         </Title>
-      </span>
+      </span> */}
+
+      <img
+        src={Contact}
+        alt="endorsement"
+        className={
+          (isMobile ? "profile-image-mobile" : "profile-image") +
+          " scale-in-out"
+        }
+      />
       <div
         className={
           isMobile ? "contact-list-container-mobile" : "contact-list-container"
