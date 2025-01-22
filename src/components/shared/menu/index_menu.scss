@@ -19,33 +19,6 @@
   }
 }
 
-.menu-mobile {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  z-index: 1;
-
-  .ant-list-items {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-
-    .item {
-      background-color: white;
-      margin: 2%;
-      width: 15vw;
-      height: 20vh;
-      border-radius: 2rem 2rem 0 0;
-      text-align: center;
-      transition: all 0.2s;
-      writing-mode: sideways-lr;
-    }
-
-    .item:hover {
-      scale: 1.1;
-      cursor: pointer;
-    }
-  }
+.close-button {
+  display: none;
 }

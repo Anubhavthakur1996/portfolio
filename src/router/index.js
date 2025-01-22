@@ -8,6 +8,7 @@ import Skills from "../components/skills";
 import Endorsements from "../components/endorsements";
 import Contact from "../components/contact";
 import Menu from "../components/shared/menu";
+import NotFound from "../components/not_found";
 
 export default function Router() {
   const dispatch = useDispatch();
@@ -39,7 +40,7 @@ export default function Router() {
         <Route path="skills" element={<Skills />} />
         <Route path="endorsements" element={<Endorsements />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<h1>Not Found</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
