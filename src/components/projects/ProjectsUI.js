@@ -1,6 +1,8 @@
 import { FcRules } from "react-icons/fc";
-import { Button, Timeline } from "antd";
+import { Button, Timeline, Typography } from "antd";
 import { ArrowDownOutlined } from "@ant-design/icons";
+
+const { Title } = Typography;
 
 const ProjectsUI = ({
   work,
@@ -14,10 +16,13 @@ const ProjectsUI = ({
   return (
     <div className="projects move-right-left">
       <span className={isMobile ? "title-mobile" : "title"}>
-        <FcRules />
-        &nbsp;&nbsp; A Little history lesson &nbsp;&nbsp;
-        <FcRules />
+        <Title>
+          <FcRules />
+          &nbsp;&nbsp; A Little History Lesson &nbsp;&nbsp;
+          <FcRules />
+        </Title>
       </span>
+
       <div
         className={
           isMobile ? "timeline-box-container-mobile" : "timeline-box-container"

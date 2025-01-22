@@ -1,7 +1,9 @@
+import Icon from "@ant-design/icons";
 import { VscAzureDevops } from "react-icons/vsc";
 import { SiTypescript, SiJavascript } from "react-icons/si";
 import { FaReact, FaVuejs, FaGitAlt, FaPython } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
+import Python from "../assets/python.svg";
 
 const skills = [
   {
@@ -32,7 +34,7 @@ const skills = [
   {
     id: 6,
     title: "Python",
-    icon: <FaPython />,
+    icon: <img src={Python} alt="python" />,
   },
   {
     id: 7,

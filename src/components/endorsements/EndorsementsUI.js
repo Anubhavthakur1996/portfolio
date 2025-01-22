@@ -1,9 +1,10 @@
-import { Carousel, Button, Card, Image } from "antd";
+import { Carousel, Button, Card, Image, Typography } from "antd";
 import { FcCollaboration } from "react-icons/fc";
 import { ArrowDownOutlined } from "@ant-design/icons";
 import Man from "../../assets/man-2.jpg";
 
 const { Meta } = Card;
+const { Title } = Typography;
 
 const EndorsementsUI = ({
   endoresemnt,
@@ -17,8 +18,10 @@ const EndorsementsUI = ({
   return (
     <div className="endorsement move-left-right">
       <span className={isMobile ? "title-mobile" : "title"}>
-        <FcCollaboration /> &nbsp; What the people are saying? &nbsp;{" "}
-        <FcCollaboration />
+        <Title>
+          <FcCollaboration /> &nbsp; What People are Saying? &nbsp;{" "}
+          <FcCollaboration />
+        </Title>
       </span>
       <div className={isMobile ? "slider-wrapper-mobile" : "slider-wrapper"}>
         <Carousel autoplay className="slider" arrows>

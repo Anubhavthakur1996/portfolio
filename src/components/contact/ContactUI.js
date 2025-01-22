@@ -1,12 +1,19 @@
+import { Typography } from "antd";
 import { FaLinkedin, FaGitAlt } from "react-icons/fa";
+import { FcBinoculars } from "react-icons/fc";
 import { MdEmail } from "react-icons/md";
-import { FcCellPhone } from "react-icons/fc";
+// import { FcCellPhone } from "react-icons/fc";
+
+const { Title } = Typography;
 
 const ContactUI = ({ isMobile }) => {
   return (
     <div className="contact move-bottom-up">
       <span className={isMobile ? "title-mobile" : "title"}>
-        You can find me on:
+        <Title>
+          <FcBinoculars />
+          &nbsp; You Can Find Me On: &nbsp; <FcBinoculars />
+        </Title>
       </span>
       <div
         className={
