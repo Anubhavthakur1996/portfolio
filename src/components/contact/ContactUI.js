@@ -54,7 +54,7 @@ const ContactUI = ({ isMobile }) => {
             </span>
             <span className="contact-info">
               <a
-                href="https://anubhavthakur1996.github.io/"
+                href="https://github.com/Anubhavthakur1996"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -69,13 +69,7 @@ const ContactUI = ({ isMobile }) => {
               <MdEmail style={{ color: "#0078d4" }} />
             </span>
             <span className="contact-info">
-              <a
-                href="mailto:anubhavthakur1996@outlook.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                E-Mail Me
-              </a>
+              <a href="mailto:anubhavthakur1996@outlook.com">E-Mail Me</a>
             </span>
           </div>
 
