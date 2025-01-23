@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.acfc5250.css",
-    "main.js": "/portfolio/static/js/main.4e955f2a.js",
+    "main.css": "/portfolio/static/css/main.e0fc1c0e.css",
+    "main.js": "/portfolio/static/js/main.6990ebdf.js",
     "static/js/453.ac7a7bc9.chunk.js": "/portfolio/static/js/453.ac7a7bc9.chunk.js",
     "static/media/intro_vid.mp4": "/portfolio/static/media/intro_vid.715c88446adde40cca9b.mp4",
     "static/media/man-2.jpg": "/portfolio/static/media/man-2.3283c64c0b64d78ef2bb.jpg",
@@ -10,6 +10,7 @@
     "static/media/contact.png": "/portfolio/static/media/contact.89cc037e3bf56f17b7a0.png",
     "static/media/tools.png": "/portfolio/static/media/tools.7807a8df0c11c9d04ff7.png",
     "static/media/splash.png": "/portfolio/static/media/splash.c8f2a0015fbdeac692bd.png",
+    "static/media/clapping.mp3": "/portfolio/static/media/clapping.092aa9e9f5bac6a82be7.mp3",
     "static/media/agbalumo-latin-400-normal.woff": "/portfolio/static/media/agbalumo-latin-400-normal.c274dd1099d59de66c86.woff",
     "static/media/akaya-kanadaka-kannada-400-normal.woff2": "/portfolio/static/media/akaya-kanadaka-kannada-400-normal.8b83081ee9d924dab512.woff2",
     "static/media/agbalumo-latin-400-normal.woff2": "/portfolio/static/media/agbalumo-latin-400-normal.401ca69517ff451d1a01.woff2",
@@ -30,11 +31,12 @@
     "static/media/alex-brush-latin-ext-400-normal.woff": "/portfolio/static/media/alex-brush-latin-ext-400-normal.1becc45277fb2c46386c.woff",
     "static/media/aclonica-latin-400-normal.woff": "/portfolio/static/media/aclonica-latin-400-normal.ee2d4729968caf4c7964.woff",
     "static/media/source-sans-3-cyrillic-wght-normal.woff2": "/portfolio/static/media/source-sans-3-cyrillic-wght-normal.b2f123e9b169654f3eb4.woff2",
-    "static/media/piano.mp3": "/portfolio/static/media/piano.1d4ac7c6567feed23a41.mp3",
     "static/media/aclonica-latin-400-normal.woff2": "/portfolio/static/media/aclonica-latin-400-normal.eab5d42489fb4662c5bd.woff2",
     "static/media/aldrich-latin-400-normal.woff2": "/portfolio/static/media/aldrich-latin-400-normal.bef403a4ff5eda63b4b1.woff2",
+    "static/media/keyboard.ogg": "/portfolio/static/media/keyboard.0e516f6d3f30e7809931.ogg",
     "static/media/source-sans-3-greek-wght-normal.woff2": "/portfolio/static/media/source-sans-3-greek-wght-normal.35bae3ac3714fcc8f611.woff2",
     "static/media/akaya-kanadaka-latin-ext-400-normal.woff2": "/portfolio/static/media/akaya-kanadaka-latin-ext-400-normal.c45f761a5c6f015d5b7e.woff2",
+    "static/media/piano.mp3": "/portfolio/static/media/piano.a098049b3aed08f03303.mp3",
     "static/media/akaya-kanadaka-latin-ext-400-normal.woff": "/portfolio/static/media/akaya-kanadaka-latin-ext-400-normal.8a92d2f90b3f4aa9c27b.woff",
     "static/media/acme-latin-400-normal.woff": "/portfolio/static/media/acme-latin-400-normal.70b67757fabaa6835f4c.woff",
     "static/media/agbalumo-vietnamese-400-normal.woff2": "/portfolio/static/media/agbalumo-vietnamese-400-normal.254527ae515a7a86ae41.woff2",
@@ -52,12 +54,12 @@
     "static/media/python.svg": "/portfolio/static/media/python.4298525c028749eb4fa154f8f5bd1931.svg",
     "static/media/agbalumo-cyrillic-ext-400-normal.woff": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.d75e406c9831ecebda1d.woff",
     "index.html": "/portfolio/index.html",
-    "main.acfc5250.css.map": "/portfolio/static/css/main.acfc5250.css.map",
-    "main.4e955f2a.js.map": "/portfolio/static/js/main.4e955f2a.js.map",
+    "main.e0fc1c0e.css.map": "/portfolio/static/css/main.e0fc1c0e.css.map",
+    "main.6990ebdf.js.map": "/portfolio/static/js/main.6990ebdf.js.map",
     "453.ac7a7bc9.chunk.js.map": "/portfolio/static/js/453.ac7a7bc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.acfc5250.css",
-    "static/js/main.4e955f2a.js"
+    "static/css/main.e0fc1c0e.css",
+    "static/js/main.6990ebdf.js"
   ]
 }
