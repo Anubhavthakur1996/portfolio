@@ -35,7 +35,6 @@
       .skill-card-mobile {
         display: flex;
         background-color: whitesmoke;
-        padding: 2%;
         border-radius: 0.25rem;
         margin: 0 2%;
         text-wrap: nowrap;
@@ -56,6 +55,41 @@
         .skill-icon {
           flex: 1;
           font-size: xx-large;
+
+          img {
+            height: 2rem;
+          }
+        }
+      }
+
+      .skill-card {
+        .skill-name {
+          border-bottom: 2rem solid #373737;
+          padding: 4% 4% 4% 0;
+        }
+
+        .skill-icon {
+          flex: 1;
+          font-size: xx-large;
+          padding: 4%;
+
+          img {
+            height: 2rem;
+          }
+        }
+      }
+
+      .skill-card-mobile {
+        .skill-name {
+          border-bottom: 1rem solid #373737;
+          padding: 2% 2% 2% 0;
+        }
+
+        .skill-icon {
+          flex: 1;
+          font-size: xx-large;
+          padding: 2%;
+
           img {
             height: 2rem;
           }
@@ -66,11 +100,6 @@
       .skill-card-mobile:active {
         scale: 1.2;
       }
-
-      // .skill-card::before,
-      // .skill-card-mobile::before {
-        
-      // }
     }
   }
 }

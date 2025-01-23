@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router";
-import { setMobile } from "../redux/coreSlice";
 import { useDispatch } from "react-redux";
+import { setMobile } from "../redux/coreSlice";
+import { showMenu } from "../redux/menuSlice";
 import App from "../App";
 import Introduction from "../components/introduction";
 import Projects from "../components/projects";
@@ -10,8 +11,18 @@ import Contact from "../components/contact";
 import Menu from "../components/shared/menu";
 import NotFound from "../components/not_found";
 
+const checkMenu = () => {
+  return sessionStorage.getItem("menu");
+};
+
 export default function Router() {
   const dispatch = useDispatch();
+
+  const menu = checkMenu();
+
+  if (menu) {
+    dispatch(showMenu());
+  }
 
   /* Storing user's device details in a variable*/
   let details = navigator.userAgent;
@@ -33,8 +44,8 @@ export default function Router() {
 
   return (
     <Routes>
+      <Route path="portfolio" element={<App />} />
       <Route element={<Menu />}>
-        <Route path="portfolio" element={<App />} />
         <Route path="intro" element={<Introduction />} />
         <Route path="history" element={<Projects />} />
         <Route path="skills" element={<Skills />} />

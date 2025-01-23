@@ -1,25 +1,14 @@
-import { Typography } from "antd";
 import { FaLinkedin, FaGitAlt } from "react-icons/fa";
-import { FcBinoculars } from "react-icons/fc";
 import { MdEmail } from "react-icons/md";
 import Contact from "../../assets/contact.png";
-// import { FcCellPhone } from "react-icons/fc";
 
-const { Title } = Typography;
-
-const ContactUI = ({ isMobile }) => {
+const ContactUI = ({ isMobile, logoClick }) => {
   return (
     <div className="contact move-bottom-up">
-      {/* <span className={isMobile ? "title-mobile" : "title"}>
-        <Title>
-          <FcBinoculars />
-          &nbsp; You Can Find Me On: &nbsp; <FcBinoculars />
-        </Title>
-      </span> */}
-
       <img
         src={Contact}
         alt="endorsement"
+        onClick={logoClick}
         className={
           (isMobile ? "profile-image-mobile" : "profile-image") +
           " scale-in-out"
@@ -72,14 +61,6 @@ const ContactUI = ({ isMobile }) => {
               <a href="mailto:anubhavthakur1996@outlook.com">E-Mail Me</a>
             </span>
           </div>
-
-          {/* Number */}
-          {/* <div className="contact-row">
-            <span className="contact-icon">
-              <FcCellPhone />
-            </span>
-            <span className="contact-info">+91******** | +91********</span>
-          </div> */}
         </div>
       </div>
     </div>

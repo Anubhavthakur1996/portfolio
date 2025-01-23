@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import skills from "../../data/skills";
 import SkillsUI from "./SkillsUI";
 import audioClip from "../../assets/audio/piano.mp3";
+import { logoClick } from "../../utils/logo";
 import "./skill_index.scss";
 
 const Skills = () => {
@@ -43,6 +44,7 @@ const Skills = () => {
     isMobile,
     showMenu,
     playAudio,
+    logoClick,
   };
   return <SkillsUI {...props} />;
 };

@@ -11,12 +11,14 @@ const SkillsUI = ({
   isMobile,
   showMenu,
   playAudio,
+  logoClick,
 }) => {
   return (
     <div className="skills move-bottom-up">
       <img
         src={Tools}
         alt="tools"
+        onClick={logoClick}
         className={
           (isMobile ? "profile-image-mobile" : "profile-image") +
           " scale-in-out"

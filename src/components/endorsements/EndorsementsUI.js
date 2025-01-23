@@ -15,6 +15,7 @@ const EndorsementsUI = ({
   cursonOnButton,
   isMobile,
   showMenu,
+  logoClick,
 }) => {
   return (
     <div className="endorsement move-left-right">
@@ -22,6 +23,7 @@ const EndorsementsUI = ({
         <img
           src={Endorement}
           alt="endorsement"
+          onClick={logoClick}
           className={
             (isMobile ? "profile-image-mobile" : "profile-image") +
             " scale-in-out"

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
+import { logoClick } from "../../utils/logo";
 import EndorsementsUI from "./EndorsementsUI";
 import endoresemnt from "../../data/endorsement";
 import "./endorse_index.scss";
@@ -36,6 +37,7 @@ const Endorsements = () => {
     goNextPage,
     isMobile,
     showMenu,
+    logoClick,
   };
   return <EndorsementsUI {...props} />;
 };

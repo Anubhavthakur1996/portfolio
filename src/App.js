@@ -47,14 +47,6 @@ function App() {
     setEnableScroll(true);
   };
 
-  // const handleScoll = (event) => {
-  //   debugger;
-  //   if (enableScroll) {
-  //     debugger;
-  //     goNextPage();
-  //   }
-  // };
-
   const cursonOnButton = () => {
     setToAnimate(false);
   };

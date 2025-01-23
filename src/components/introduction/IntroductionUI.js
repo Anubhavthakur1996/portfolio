@@ -19,6 +19,7 @@ const IntroductionUI = ({
   goNextPage,
   isMobile,
   showMenu,
+  logoClick,
 }) => {
   return (
     <>
@@ -31,6 +32,7 @@ const IntroductionUI = ({
         <img
           src={Profile}
           alt="profile"
+          onClick={logoClick}
           className={
             (isMobile ? "profile-image-mobile" : "profile-image") +
             " scale-in-out"

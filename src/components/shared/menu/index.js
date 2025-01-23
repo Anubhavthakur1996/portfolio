@@ -37,8 +37,8 @@ const Menu = () => {
             ))}
           </FloatButton.Group>
         )}
-        {/* There is a bug in antd fab that if the menu is not closed it ,oves to
-        bottom right outside visible screen. Therefore, added this hiddeb button
+        {/* There is a bug in antd FAB that if the menu is not closed it moves to
+        the bottom right, outside visible screen. Therefore, added this hidden button
         to close opened FAB */}
         <button className="close-button" ref={myRef} />
         <Outlet />

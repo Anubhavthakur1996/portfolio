@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import IntroductionUI from "./IntroductionUI";
+import { logoClick } from "../../utils/logo";
 import "./introduction_index.scss";
 
 const Introduction = () => {
@@ -33,6 +34,7 @@ const Introduction = () => {
     goNextPage,
     isMobile,
     showMenu,
+    logoClick,
   };
 
   return <IntroductionUI {...props} />;
