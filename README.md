@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="src/assets/logo.png" alt="Project logo"></a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">Thakur Anubhav Singh</h3>
 
-## Available Scripts
+<div align="center">
 
-In the project directory, you can run:
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Anubhavthakur1996/portfolio/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/Anubhavthakur1996/portfolio/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
-### `npm start`
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center"> An internal fun project to develop a platform to do many things but for now it's focused on real time chatting through socketio and real time gaming.
+    <br> 
+</p>
 
-### `npm test`
+## 📝 Table of Contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [About](#about)
+- [Logic](#logic)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
 
-### `npm run build`
+## 🧐 About <a name = "about"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This my portfolio that I recently made. You'll find useful information about me on here and I'll ty to keep it upadted alongside my LinkedIn page as well.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧐 Logic <a name = "logic"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-### `npm run eject`
+You'll land on my splash screen then bnavigate in order: Intro video -> Greeting text -> History -> Tools -> Endorsements -> Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. react: ^18.3.1
+2. react-dom: ^18.3.1
+3. react-redux: ^9.2.0
+4. react-router: ^7.1.1
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+Example placeholder
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installing
 
-## Learn More
+Clone the project from Github.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Follow the following commands:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+Yarn
+```
 
-### Code Splitting
+For development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+Yarn dev
+```
 
-### Analyzing the Bundle Size
+For normal usecase
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+Yarn start
+```
 
-### Making a Progressive Web App
+## 🔧 Running the tests <a name = "tests"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Intructions to run automated tests, if I add any in future
 
-### Advanced Configuration
+### Break down into end to end tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Explaination of test cases and why they do it (in case I add any tests to the project in future)
 
-### Deployment
+```
+Example placeholder
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### And coding style tests
 
-### `npm run build` fails to minify
+Explaination of test cases and why they do it (in case I add any tests to the project in future)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+Example placeholder
+```
+
+## 🎈 Usage <a name="usage"></a>
+
+App usage notes.
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+Additional notes on live deployment.
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [React](https://www.react.dev/) - Library
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@anubhavthakur1996o](https://github.com/Anubhavthakur1996) - Idea & Initial work
+
+## 🎉 Acknowledgements <a name = "acknowledgement"></a>
+
+- People who's work I used (if any, maybe in future if I do)
+- Inspiration
+- References
