@@ -46,10 +46,6 @@
     .card {
       margin: 0 10%;
       background-color: whitesmoke;
-      box-shadow: rgba(0, 0, 0, 0.4) 0 0.125rem 0.25rem,
-        rgba(0, 0, 0, 0.3) 0 0.438rem 0.813rem -0.188rem,
-        rgba(0, 0, 0, 0.2) 0 -0.188rem 0 inset;
-
       text-align: left;
       border-radius: 1rem;
 
@@ -78,18 +74,24 @@
 
           .ant-card-meta-title {
             text-wrap: wrap;
-            font-size: xx-large;
+            font-size: xxx-large;
           }
 
           .ant-card-meta-description {
-            font-size: x-large;
+            font-size: 1.3rem;
           }
         }
       }
 
       .card-content {
-        display: flex;
-        font-size: x-large;
+        font-size: large;
+        margin-top: 2%;
+      }
+
+      .card-content::first-letter {
+        font-size: xxx-large;
+        font-family: "Alex Brush", cursive;
+        line-height: 1;
       }
     }
   }

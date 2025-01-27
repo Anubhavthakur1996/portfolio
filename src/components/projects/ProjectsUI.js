@@ -28,7 +28,7 @@ const ProjectsUI = ({
           isMobile ? "timeline-box-container-mobile" : "timeline-box-container"
         }
       >
-        <div className="timeline-box">
+        <div className="timeline-box shadow-one">
           <Timeline
             className="timeline-wrapper"
             mode={isMobile ? "left" : "alternate"}

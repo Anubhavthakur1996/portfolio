@@ -1,6 +1,9 @@
+import { Typography } from "antd";
 import { FaLinkedin, FaGitAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Contact from "../../assets/contact.png";
+
+const { Link } = Typography;
 
 const ContactUI = ({ isMobile, logoClick }) => {
   return (
@@ -26,13 +29,14 @@ const ContactUI = ({ isMobile, logoClick }) => {
               <FaLinkedin style={{ color: "#0a66c2" }} />
             </span>
             <span className="contact-info">
-              <a
+              <Link
+                className="link"
                 href="https://www.linkedin.com/in/anubhavthakur1996/"
                 target="_blank"
                 rel="noreferrer"
               >
                 LinkedIn
-              </a>
+              </Link>
             </span>
           </div>
 
@@ -42,13 +46,14 @@ const ContactUI = ({ isMobile, logoClick }) => {
               <FaGitAlt style={{ color: "#f54739" }} />
             </span>
             <span className="contact-info">
-              <a
+              <Link
+                className="link"
                 href="https://github.com/Anubhavthakur1996"
                 target="_blank"
                 rel="noreferrer"
               >
                 Find me on GitHub
-              </a>
+              </Link>
             </span>
           </div>
 
@@ -58,7 +63,12 @@ const ContactUI = ({ isMobile, logoClick }) => {
               <MdEmail style={{ color: "#0078d4" }} />
             </span>
             <span className="contact-info">
-              <a href="mailto:anubhavthakur1996@outlook.com">E-Mail Me</a>
+              <Link
+                className="link"
+                href="mailto:anubhavthakur1996@outlook.com"
+              >
+                E-Mail Me
+              </Link>
             </span>
           </div>
         </div>

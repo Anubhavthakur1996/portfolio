@@ -5,7 +5,7 @@ import Man from "../../assets/man-2.jpg";
 import Endorement from "../../assets/endorsement.png";
 
 const { Meta } = Card;
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
 const EndorsementsUI = ({
   endoresemnt,
@@ -39,7 +39,7 @@ const EndorsementsUI = ({
       )}
 
       <div className={isMobile ? "slider-wrapper-mobile" : "slider-wrapper"}>
-        <Carousel autoplay className="slider" arrows>
+        <Carousel className="slider shadow-one" arrows>
           {endoresemnt?.map((endorse, index) => {
             if (isMobile) {
               return (
@@ -50,7 +50,9 @@ const EndorsementsUI = ({
                 >
                   <Meta title={endorse?.name} description={endorse?.title} />
                   {/* Card Content */}
-                  <div className="card-content">{endorse?.comment}</div>
+                  <p className="card-content">
+                    <Text>{endorse?.comment}</Text>
+                  </p>
                 </Card>
               );
             }
@@ -72,7 +74,7 @@ const EndorsementsUI = ({
                         description={endorse?.title}
                       />
                       {/* Card Content */}
-                      <div className="card-content">{endorse?.comment}</div>
+                      <Text className="card-content">{endorse?.comment}</Text>
                     </div>
                   </div>
                 </Card>

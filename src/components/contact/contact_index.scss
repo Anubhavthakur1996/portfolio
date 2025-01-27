@@ -13,8 +13,7 @@
     .contact-list {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      padding: 5%;
+      justify-content: center;
       background-color: white;
       border-radius: 1rem;
 
@@ -22,7 +21,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        line-height: 2%;
+        padding: 1% 0;
 
         .contact-icon {
           flex: 1;
@@ -41,12 +40,23 @@
       height: 30vh;
       width: 60vw;
 
+      .contact-icon,
+      .contact-info {
+        display: flex;
+        align-items: center;
+      }
+
       .contact-icon {
         font-size: xxx-large;
+        justify-content: center;
       }
 
       .contact-info {
         font-size: x-large;
+
+        .link {
+          font-size: x-large;
+        }
       }
     }
   }
@@ -60,15 +70,26 @@
       .contact-row {
         flex-wrap: wrap;
 
+        .contact-icon,
+        .contact-info {
+          display: flex;
+          align-items: center;
+        }
+
         .contact-icon {
           flex: 1;
-          font-size: xx-large;
+          justify-content: center;
+          font-size: x-large;
         }
 
         .contact-info {
           flex: 2;
           text-align: justify;
           font-size: large;
+
+          .link {
+            font-size: large;
+          }
         }
       }
     }

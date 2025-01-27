@@ -1,7 +1,6 @@
-import Icon from "@ant-design/icons";
 import { VscAzureDevops } from "react-icons/vsc";
 import { SiTypescript, SiJavascript } from "react-icons/si";
-import { FaReact, FaVuejs, FaGitAlt, FaPython } from "react-icons/fa";
+import { FaReact, FaVuejs, FaGitAlt } from "react-icons/fa";
 import { TbBrandReactNative } from "react-icons/tb";
 import Python from "../assets/python.svg";
 
