@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e0fc1c0e.css",
-    "main.js": "/portfolio/static/js/main.6990ebdf.js",
+    "main.css": "/portfolio/static/css/main.61f84753.css",
+    "main.js": "/portfolio/static/js/main.dcf36583.js",
     "static/js/453.ac7a7bc9.chunk.js": "/portfolio/static/js/453.ac7a7bc9.chunk.js",
     "static/media/intro_vid.mp4": "/portfolio/static/media/intro_vid.715c88446adde40cca9b.mp4",
     "static/media/man-2.jpg": "/portfolio/static/media/man-2.3283c64c0b64d78ef2bb.jpg",
@@ -51,15 +51,15 @@
     "static/media/alex-brush-vietnamese-400-normal.woff": "/portfolio/static/media/alex-brush-vietnamese-400-normal.7021bb188352e6ec56a3.woff",
     "static/media/alata-vietnamese-400-normal.woff": "/portfolio/static/media/alata-vietnamese-400-normal.ed231da85f2f2689a3d0.woff",
     "static/media/agbalumo-cyrillic-ext-400-normal.woff2": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.cc91a32634e5805e241f.woff2",
-    "static/media/python.svg": "/portfolio/static/media/python.4298525c028749eb4fa154f8f5bd1931.svg",
+    "static/media/python.svg": "/portfolio/static/media/python.7658fc5b493f0fa4979b28893c05b15b.svg",
     "static/media/agbalumo-cyrillic-ext-400-normal.woff": "/portfolio/static/media/agbalumo-cyrillic-ext-400-normal.d75e406c9831ecebda1d.woff",
     "index.html": "/portfolio/index.html",
-    "main.e0fc1c0e.css.map": "/portfolio/static/css/main.e0fc1c0e.css.map",
-    "main.6990ebdf.js.map": "/portfolio/static/js/main.6990ebdf.js.map",
+    "main.61f84753.css.map": "/portfolio/static/css/main.61f84753.css.map",
+    "main.dcf36583.js.map": "/portfolio/static/js/main.dcf36583.js.map",
     "453.ac7a7bc9.chunk.js.map": "/portfolio/static/js/453.ac7a7bc9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0fc1c0e.css",
-    "static/js/main.6990ebdf.js"
+    "static/css/main.61f84753.css",
+    "static/js/main.dcf36583.js"
   ]
 }
