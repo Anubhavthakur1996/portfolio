@@ -39,7 +39,7 @@ const EndorsementsUI = ({
       )}
 
       <div className={isMobile ? "slider-wrapper-mobile" : "slider-wrapper"}>
-        <Carousel className="slider shadow-one" arrows>
+        <Carousel autoplay className="slider shadow-one" arrows>
           {endoresemnt?.map((endorse, index) => {
             if (isMobile) {
               return (
