@@ -20,7 +20,10 @@ export default function Router() {
 
   const menu = checkMenu();
 
-  if (menu) {
+  const firstTime = JSON.parse(localStorage.getItem("isFirst"));
+
+  if ((firstTime === false) | menu) {
+    debugger;
     dispatch(showMenu());
   }
 

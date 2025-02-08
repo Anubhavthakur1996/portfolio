@@ -14,6 +14,8 @@ const Contact = () => {
 
   const audioClip = new Audio(clapping);
 
+  localStorage.setItem("isFirst", false);
+
   const openNotification = () => {
     api.open({
       message: "Awesome!!",

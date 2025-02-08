@@ -1,7 +1,7 @@
 import { ContainerOutlined, UserOutlined } from "@ant-design/icons";
 import { HiMiniChatBubbleLeftRight } from "react-icons/hi2";
 import { MdContactMail } from "react-icons/md";
-import { FcSupport } from "react-icons/fc";
+import { FcSupport, FcNook } from "react-icons/fc";
 
 const menu = [
   {
@@ -28,6 +28,12 @@ const menu = [
     name: "Contact",
     path: "contact",
     icon: <MdContactMail />,
+  },
+  {
+    name: "My Blogs",
+    path: "https://anubhavthakur1996.github.io/Thakur-Blogs-Tutorials/",
+    icon: <FcNook />,
+    isUrl: true,
   },
 ];
 

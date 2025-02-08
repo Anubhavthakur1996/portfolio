@@ -36,7 +36,14 @@ function App() {
   }, [start]);
 
   useEffect(() => {
-    setTimeout(() => setSplash(false), 4000);
+    setTimeout(() => {
+      const firstTime = JSON.parse(localStorage.getItem("isFirst"));
+      if (firstTime === false) {
+        nav("/intro");
+      } else {
+        setSplash(false);
+      }
+    }, 4000);
   }, [splash]);
 
   const startAction = () => {

@@ -30,8 +30,12 @@ const Menu = () => {
                 style={{ insetInlineEnd: 24 }}
                 icon={item?.icon}
                 onClick={() => {
-                  myRef.current.click();
-                  nav(item?.path);
+                  if (item?.isUrl) {
+                    window.open(item?.path, "_blank");
+                  } else {
+                    myRef.current.click();
+                    nav(item?.path);
+                  }
                 }}
               />
             ))}
@@ -56,7 +60,11 @@ const Menu = () => {
             <List.Item
               className="item shadow-one"
               onClick={() => {
-                nav(item?.path);
+                if (item?.isUrl) {
+                  window.open(item?.path, "_blank");
+                } else {
+                  nav(item?.path);
+                }
               }}
             >
               <Typography.Text key={item?.path} name={item?.path}>
