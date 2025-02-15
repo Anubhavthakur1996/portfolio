@@ -47,7 +47,7 @@ export default function Router() {
 
   return (
     <Routes>
-      <Route path="portfolio" element={<App />} />
+      <Route path="/" element={<App />} />
       <Route element={<Menu />}>
         <Route path="intro" element={<Introduction />} />
         <Route path="history" element={<Projects />} />
