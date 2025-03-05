@@ -23,7 +23,7 @@ export default function Router() {
   const firstTime = JSON.parse(localStorage.getItem("isFirst"));
 
   if ((firstTime === false) | menu) {
-    debugger;
+    
     dispatch(showMenu());
   }
 
